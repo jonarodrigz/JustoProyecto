@@ -1,0 +1,66 @@
+@font-face{
+    font-family: "Gotham-Light";
+    src: url(../Tipografia/Gotham-Light.otf);
+
+}
+@font-face{
+    font-family: "Gotham-Black";
+    src: url(../Tipografia/Gotham-Black.otf);
+
+}
+@font-face{
+    font-family: "Gotham-Bold";
+    src: url(../Tipografia/Gotham-Bold.otf);
+
+}
+.bg-amarillo {
+    background-color: #FBC430 !important;
+  }
+  .bg-naranja {
+    background-color: #F08341 !important;
+  }
+  .bg-verde {
+    background-color: #A2C640 !important;
+  }
+  .bg-vino {
+    background-color: #75163B !important;
+  }
+
+
+
+  .text-vino-light {
+      font-family: Gotham-Light;
+      font-size: 1rem;
+    color: #75163B !important;
+  }
+  .text-vino-bold {
+    font-family: Gotham-Bold;
+    font-size: 1rem;
+  color: #75163B !important;
+}
+.text-vino-black {
+    font-family: Gotham-Black;
+  font-size: 1rem;
+  color: #75163B !important;
+}
+.text-white-light {
+    font-family: Gotham-Light;
+    font-size: 1rem;
+  color: #fff !important;
+}
+.text-white-bold {
+  font-family: Gotham-Bold;
+  font-size: 1rem;
+color: #fff !important;
+}
+.text-white-black {
+  font-family: Gotham-Black;
+font-size: 1rem;
+color: #fff !important;
+}
+
+
+  
+  
+
+
