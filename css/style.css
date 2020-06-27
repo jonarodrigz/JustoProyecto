@@ -26,6 +26,21 @@
     background-color: #75163B !important;
   }
 
+ 
+  .amarillo {
+    color: #FBC430 !important;
+  }
+  .naranja {
+    color: #F08341 !important;
+  }
+  .verde {
+    color: #A2C640 !important;
+  }
+  .vino {
+    color: #75163B !important;
+  }
+
+
 
 
   .text-vino-light {
@@ -58,6 +73,8 @@ color: #fff !important;
 font-size: 1rem;
 color: #fff !important;
 }
+
+
 
 
   
