@@ -41,7 +41,18 @@
   }
 
 
-
+.letra-gotham-light{
+  font-family: Gotham-Light;
+  
+}
+.letra-gotham-bold{
+  font-family: Gotham-Bold;
+  
+}
+.letra-gotham-black{
+  font-family: Gotham-Black;
+  
+}
 
   .text-vino-light {
       font-family: Gotham-Light;
@@ -71,8 +82,11 @@ color: #fff !important;
 .text-white-black {
   font-family: Gotham-Black;
 font-size: 1rem;
-color: #fff !important;
+color: 
+#fff !important;
 }
+
+
 
 
 

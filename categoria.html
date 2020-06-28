@@ -17,20 +17,770 @@
 </head>
 
 <body>
+  <!-- Barra de Navegacion -->
+  <section>
+    <!--Navbar -->
+    <div class="container">
+      <nav class="mb-1 navbar navbar-dark navbar-expand-sm  bg-naranja
+  info-color scrolling-navbar ">
+        <a class="navbar-brand bg-amarillo rounded-pill w-22 p-1 text-white-black" href="#">Descarga nuestro
+          catalogo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+          aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent-4">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white-bold" href="#">
+                <i class="fa fa-user"></i> Mi Cuenta </a>
+            </li>
 
-  <!-- Start your project here-->
-  <div style="height: 100vh">
-    <div class="flex-center flex-column">
+            <li class="nav-item dropdown">
+              <a class="nav-link  text-white-bold" data-toggle="modal" data-target="#modalCart" href="#" role="button"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                Mi Carrito <span class="badge bg-vino ml-2 p-2 text-white-bold">$0.0</span></a>
+              <!-- Modal: modalCart -->
+              <div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                      <h4 class="modal-title" id="myModalLabel">Articulos</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"></span>
+                      </button>
+                    </div>
+                    <!--Body-->
+                    <div class="modal-body">
 
-      <h1 class="text-hide animated fadeIn mb-4"
-        style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">
-        MDBootstrap</h1>
-      <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>#</th>
+                            <th>Product name</th>
+                            <th>Price</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Product 1</td>
+                            <td>100$</td>
 
-      <p class="animated fadeIn text-muted">MDB Team</p>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Product 2</td>
+                            <td>100$</td>
+
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Product 3</td>
+                            <td>100$</td>
+
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Product 4</td>
+                            <td>100$</td>
+
+                          </tr>
+                          <tr class="total">
+                            <td> </td>
+                            <td>Subtotal</td>
+                            <td>400$</td>
+
+                          </tr>
+                          <tr class="total">
+                            <td> </td>
+                            <td>Delivery</td>
+                            <td>100$</td>
+
+                          </tr>
+                          <tr class="total">
+                            <td> </td>
+                            <td>Total</td>
+                            <td>500$</td>
+
+                          </tr>
+
+                        </tbody>
+                      </table>
+
+                    </div>
+                    <!--Footer-->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-warning" data-dismiss="modal">Procesar Pago</button>
+                      <button class="btn btn-primary bg-naranja">Ver Carrito</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal: modalCart -->
+            </li>
+
+
+          </ul>
+        </div>
     </div>
-  </div>
-  <!-- Start your project here-->
+    </nav>
+    <!--/.Navbar -->
+
+
+
+  </section>
+  <!-- Fin Barra de Navegacion -->
+  <!-- Barra de Logo -->
+  <section>
+    <nav class="navbar navbar-expand-sm navbar-dark navbar-default bg-white z-depth-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="Logo/Logo_Mesa de trabajo 1.png" class="img-fluid" alt="Responsive image">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
+              aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="col-md-8 d-flex align-items-center">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="navbar-nav ml-auto">
+                <button type="button" class="btn  rounded-pill border border-0 text-vino-black">Inicio</button>
+                <button type="button" class="btn  rounded-pill border-0 text-vino-black">Categoria</button>
+                <button type="button" class="btn  rounded-pill border-0 text-vino-black">Promociones</button>
+                <button type="button" class="btn rounded-pill border-0 text-vino-black">Contacto</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- Fin Barra Logo -->
+  <section>
+    <div class="container">
+      <div class="row bg-verde p-4">
+        <div class="col text-center">
+          <h1 class="letra-gotham-black white-text w-100">VERDURAS</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <nav class="navbar navbar-dark default-color justify-content-between">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <a class="navbar-brand" href="categoria.html">Verduras</a>
+        <form class="form-inline my-1">
+          <div class="md-form form-sm my-0">
+            <input class="form-control form-control-sm mr-sm-2 mb-0" type="text" placeholder="Search"
+              aria-label="Search">
+          </div>
+          <button class="btn btn-outline-white btn-sm my-0" type="submit">Search</button>
+        </form>
+      </nav>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <h3>Ordenar por: </h3>
+        <div class="btn-group">
+          <button type="button" class="btn border border-dark rounded-pill dropdown-toggle" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Selecione Opcion
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <button class="dropdown-item" type="button">Precio</button>
+            <button class="dropdown-item" type="button">Mas Vendidos</button>
+            <button class="dropdown-item" type="button">Ofertas</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <!-- Grid row -->
+      <div class="row">
+
+        <div class="col-12 col-md-3 no-gutters">
+          <div class="card mb-1">
+            <a class="waves-effect waves-light" href="detalleproducto.html">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                alt="Card image cap"></a>
+            <div class="card-body no-gutters">
+              <div class="row">
+                <div class="col text-center">
+                  <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
+                </div>
+              </div>
+
+              <div class="row align-items-center d-flex d-inline-block">
+
+                <div class="col-6 align-baseline no-gutters">
+                  <h3 class="letra-gotham-black vino">$0.25</h3>
+                  <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                </div>
+                <div class="col-6">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-minus"></i></a>
+                    </div>
+                    <div class="col-4 text-center">
+                      <h3 class="border border-grey btn-rounded ">1</h3>
+                    </div>
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="row no-gutters text-center">
+                    <div class="col">
+                      <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                          class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 no-gutters">
+          <div class="card mb-1">
+            <a class="waves-effect waves-light" href="detalleproducto.html">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                alt="Card image cap"></a>
+            <div class="card-body no-gutters">
+              <div class="row">
+                <div class="col text-center">
+                  <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
+                </div>
+              </div>
+
+              <div class="row align-items-center d-flex d-inline-block">
+
+                <div class="col-6 align-baseline no-gutters">
+                  <h3 class="letra-gotham-black vino">$0.25</h3>
+                  <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                </div>
+                <div class="col-6">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-minus"></i></a>
+                    </div>
+                    <div class="col-4 text-center">
+                      <h3 class="border border-grey btn-rounded ">1</h3>
+                    </div>
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="row no-gutters text-center">
+                    <div class="col">
+                      <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                          class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 no-gutters">
+          <div class="card mb-1">
+            <a class="waves-effect waves-light" href="detalleproducto.html">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                alt="Card image cap"></a>
+            <div class="card-body no-gutters">
+              <div class="row">
+                <div class="col text-center">
+                  <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
+                </div>
+              </div>
+
+              <div class="row align-items-center d-flex d-inline-block">
+
+                <div class="col-6 align-baseline no-gutters">
+                  <h3 class="letra-gotham-black vino">$0.25</h3>
+                  <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                </div>
+                <div class="col-6">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-minus"></i></a>
+                    </div>
+                    <div class="col-4 text-center">
+                      <h3 class="border border-grey btn-rounded ">1</h3>
+                    </div>
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="row no-gutters text-center">
+                    <div class="col">
+                      <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                          class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 no-gutters">
+          <div class="card mb-1">
+            <a class="waves-effect waves-light" href="detalleproducto.html">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                alt="Card image cap"></a>
+            <div class="card-body no-gutters">
+              <div class="row">
+                <div class="col text-center">
+                  <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
+                </div>
+              </div>
+
+              <div class="row align-items-center d-flex d-inline-block">
+
+                <div class="col-6 align-baseline no-gutters">
+                  <h3 class="letra-gotham-black vino">$0.25</h3>
+                  <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                </div>
+                <div class="col-6">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-minus"></i></a>
+                    </div>
+                    <div class="col-4 text-center">
+                      <h3 class="border border-grey btn-rounded ">1</h3>
+                    </div>
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="row no-gutters text-center">
+                    <div class="col">
+                      <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                          class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      <div class="row">
+
+        <div class="col-12 col-md-3 no-gutters">
+          <div class="card mb-1">
+            <a class="waves-effect waves-light" href="detalleproducto.html">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                alt="Card image cap"></a>
+            <div class="card-body no-gutters">
+              <div class="row">
+                <div class="col text-center">
+                  <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
+                </div>
+              </div>
+
+              <div class="row align-items-center d-flex d-inline-block">
+
+                <div class="col-6 align-baseline no-gutters">
+                  <h3 class="letra-gotham-black vino">$0.25</h3>
+                  <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                </div>
+                <div class="col-6">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-minus"></i></a>
+                    </div>
+                    <div class="col-4 text-center">
+                      <h3 class="border border-grey btn-rounded ">1</h3>
+                    </div>
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="row no-gutters text-center">
+                    <div class="col">
+                      <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                          class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 no-gutters">
+          <div class="card mb-1">
+            <a class="waves-effect waves-light" href="detalleproducto.html">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                alt="Card image cap"></a>
+            <div class="card-body no-gutters">
+              <div class="row">
+                <div class="col text-center">
+                  <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
+                </div>
+              </div>
+
+              <div class="row align-items-center d-flex d-inline-block">
+
+                <div class="col-6 align-baseline no-gutters">
+                  <h3 class="letra-gotham-black vino">$0.25</h3>
+                  <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                </div>
+                <div class="col-6">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-minus"></i></a>
+                    </div>
+                    <div class="col-4 text-center">
+                      <h3 class="border border-grey btn-rounded ">1</h3>
+                    </div>
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="row no-gutters text-center">
+                    <div class="col">
+                      <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                          class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 no-gutters">
+          <div class="card mb-1">
+            <a class="waves-effect waves-light" href="detalleproducto.html">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                alt="Card image cap"></a>
+            <div class="card-body no-gutters">
+              <div class="row">
+                <div class="col text-center">
+                  <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
+                </div>
+              </div>
+
+              <div class="row align-items-center d-flex d-inline-block">
+
+                <div class="col-6 align-baseline no-gutters">
+                  <h3 class="letra-gotham-black vino">$0.25</h3>
+                  <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                </div>
+                <div class="col-6">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-minus"></i></a>
+                    </div>
+                    <div class="col-4 text-center">
+                      <h3 class="border border-grey btn-rounded ">1</h3>
+                    </div>
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="row no-gutters text-center">
+                    <div class="col">
+                      <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                          class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 no-gutters">
+          <div class="card mb-1">
+            <a class="waves-effect waves-light" href="detalleproducto.html">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                alt="Card image cap"></a>
+            <div class="card-body no-gutters">
+              <div class="row">
+                <div class="col text-center">
+                  <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
+                </div>
+              </div>
+
+              <div class="row align-items-center d-flex d-inline-block">
+
+                <div class="col-6 align-baseline no-gutters">
+                  <h3 class="letra-gotham-black vino">$0.25</h3>
+                  <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                </div>
+                <div class="col-6">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-minus"></i></a>
+                    </div>
+                    <div class="col-4 text-center">
+                      <h3 class="border border-grey btn-rounded ">1</h3>
+                    </div>
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="row no-gutters text-center">
+                    <div class="col">
+                      <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                          class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      <div class="row">
+
+        <div class="col-12 col-md-3 no-gutters">
+          <div class="card mb-1">
+            <a class="waves-effect waves-light" href="detalleproducto.html">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                alt="Card image cap"></a>
+            <div class="card-body no-gutters">
+              <div class="row">
+                <div class="col text-center">
+                  <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
+                </div>
+              </div>
+
+              <div class="row align-items-center d-flex d-inline-block">
+
+                <div class="col-6 align-baseline no-gutters">
+                  <h3 class="letra-gotham-black vino">$0.25</h3>
+                  <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                </div>
+                <div class="col-6">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-minus"></i></a>
+                    </div>
+                    <div class="col-4 text-center">
+                      <h3 class="border border-grey btn-rounded ">1</h3>
+                    </div>
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="row no-gutters text-center">
+                    <div class="col">
+                      <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                          class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 no-gutters">
+          <div class="card mb-1">
+            <a class="waves-effect waves-light" href="detalleproducto.html">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                alt="Card image cap"></a>
+            <div class="card-body no-gutters">
+              <div class="row">
+                <div class="col text-center">
+                  <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
+                </div>
+              </div>
+
+              <div class="row align-items-center d-flex d-inline-block">
+
+                <div class="col-6 align-baseline no-gutters">
+                  <h3 class="letra-gotham-black vino">$0.25</h3>
+                  <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                </div>
+                <div class="col-6">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-minus"></i></a>
+                    </div>
+                    <div class="col-4 text-center">
+                      <h3 class="border border-grey btn-rounded ">1</h3>
+                    </div>
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="row no-gutters text-center">
+                    <div class="col">
+                      <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                          class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 no-gutters">
+          <div class="card mb-1">
+            <a class="waves-effect waves-light" href="detalleproducto.html">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                alt="Card image cap"></a>
+            <div class="card-body no-gutters">
+              <div class="row">
+                <div class="col text-center">
+                  <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
+                </div>
+              </div>
+
+              <div class="row align-items-center d-flex d-inline-block">
+
+                <div class="col-6 align-baseline no-gutters">
+                  <h3 class="letra-gotham-black vino">$0.25</h3>
+                  <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                </div>
+                <div class="col-6">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-minus"></i></a>
+                    </div>
+                    <div class="col-4 text-center">
+                      <h3 class="border border-grey btn-rounded ">1</h3>
+                    </div>
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="row no-gutters text-center">
+                    <div class="col">
+                      <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                          class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 no-gutters">
+          <div class="card mb-1">
+            <a class="waves-effect waves-light" href="detalleproducto.html">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                alt="Card image cap"></a>
+            <div class="card-body no-gutters">
+              <div class="row">
+                <div class="col text-center">
+                  <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
+                </div>
+              </div>
+
+              <div class="row align-items-center d-flex d-inline-block">
+
+                <div class="col-6 align-baseline no-gutters">
+                  <h3 class="letra-gotham-black vino">$0.25</h3>
+                  <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                </div>
+                <div class="col-6">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-minus"></i></a>
+                    </div>
+                    <div class="col-4 text-center">
+                      <h3 class="border border-grey btn-rounded ">1</h3>
+                    </div>
+                    <div class="col-4 text-center">
+                      <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-plus"></i></a>
+                    </div>
+                  </div>
+                  <div class="row no-gutters text-center">
+                    <div class="col">
+                      <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                          class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+     
+    </div>
+  </section>
+
+
+
+
+  <!-- Baner inferior -->
+  <section>
+    <div class="container">
+      <img src="imagenes/baner abajo.jpg" class="img-fluid w-100 p-5" alt="Responsive image">
+    </div>
+  </section>
+  <!-- Fin Baner inferior -->
+  <!-- Footer -->
+  <footer class="page-footer font-small blue-grey lighten-5">
+
+    <div class="bg-vino">
+      <div class="container">
+
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0 text-white-light">© 2020 Copyright Justo Market</h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+            <!-- Whatsapp -->
+            <a class="fb-ic">
+              <i class="fab fa-whatsapp white-text mr-4"> </i>
+            </a>
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f white-text mr-4"> </i>
+            </a>
+
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row-->
+
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
 
   <!-- SCRIPTS -->
   <!-- JQuery -->

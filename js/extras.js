@@ -14,4 +14,8 @@ $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
     }
   });
 
-  $('.svg-inject').svgInject();
+// MDB Lightbox Init
+$(function () {
+  $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+});
+
