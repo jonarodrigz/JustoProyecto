@@ -54,37 +54,36 @@
   
 }
 
-  .text-vino-light {
-      font-family: Gotham-Light;
-      font-size: 1rem;
-    color: #75163B !important;
+
+
+.outline-vino {
+  color: #75163B !important;
   }
-  .text-vino-bold {
-    font-family: Gotham-Bold;
-    font-size: 1rem;
-  color: #75163B !important;
-}
-.text-vino-black {
-    font-family: Gotham-Black;
-  font-size: 1rem;
-  color: #75163B !important;
-}
-.text-white-light {
-    font-family: Gotham-Light;
-    font-size: 1rem;
+
+.outline-vino:hover {
   color: #fff !important;
+  background-color: #75163B;
+  
 }
-.text-white-bold {
-  font-family: Gotham-Bold;
-  font-size: 1rem;
-color: #fff !important;
+
+.buscar-right {
+  border-top-right-radius: 1rem !important;
+  border-bottom-right-radius: 1rem  !important;
 }
-.text-white-black {
-  font-family: Gotham-Black;
-font-size: 1rem;
-color: 
-#fff !important;
+.buscar-left {
+  border-top-left-radius: 1rem !important;
+  border-bottom-left-radius: 1rem  !important;
 }
+
+.ancho-total{
+  width: 1200px !important;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 
 
 
