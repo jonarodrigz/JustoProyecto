@@ -19,3 +19,11 @@ $(function () {
   $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
 });
 
+
+// popovers initialization - on click
+$('[data-toggle="popover-click"]').popover({
+  html: true,
+  trigger: 'click',
+  placement: 'bottom',
+  content: function () { return $('#popover_content_list').html(); }
+});

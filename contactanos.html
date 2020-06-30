@@ -17,11 +17,553 @@
 </head>
 
 <body>
+ <div class="container">
+<!-- Barra de Navegacion -->
+<section>
+  <!--Navbar -->
+
+  <nav class="mb-1 navbar navbar-dark navbar-expand-sm bg-naranja info-color">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent-4">
+          <a class="navbar-brand bg-amarillo rounded-pill p-1 letra-gotham-black" href="#">Descarga nuestro
+              catalogo</a>
+      </div>
+
+      <ul class="navbar-nav navbar-expand">
+          <li class="nav-item">
+              <span class="text ml-2 p-2 d-none d-md-block d-lg-block">
+                  <a class="nav-link letra-gotham-bold" data-toggle="modal" data-target="#modalLRForm"
+                      href="login.html">
+                      <i class="fa fa-user"></i> Mi Cuenta </a>
+              </span>
+              <span class="d-block d-sm-block d-md-none d-lg-none">
+                  <a class="nav-link " data-toggle="modal" data-target="#modalLRForm" href="login.html"><i
+                          class="fa fa-user"></i></a></span>
+          </li>
+          <li class="nav-item">
+              <span class="text ml-2 p-2 d-none d-md-block d-lg-block">
+                  <a class="nav-link letra-gotham-bold" data-toggle="modal" data-target="#modalCart"
+                      role="button" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                      Mi Carrito <span class="badge bg-vino letra-gotham-bold">$0.0</span></a>
+              </span>
+              <span class="d-block d-sm-block d-md-none d-lg-none">
+                  <a class="nav-link  letra-gotham-bold" data-toggle="modal" data-target="#modalCart" href="#"
+                      role="button" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa fa-shopping-cart" aria-hidden="true"></i><span
+                          class="badge bg-vino ml-2 letra-gotham-bold">$0.0</span>
+                  </a>
+              </span>
+              <!--Modal: Login / Register Form-->
+              <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog"
+                  aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog cascading-modal" role="document">
+                      <!--Content-->
+                      <div class="modal-content">
+
+                          <!--Modal cascading tabs-->
+                          <div class="modal-c-tabs">
+
+                              <!-- Nav tabs -->
+                              <ul class="nav nav-tabs md-tabs tabs-2 bg-vino" role="tablist">
+                                  <li class="nav-item">
+                                      <a class="nav-link letra-gotham-bold" data-toggle="tab"
+                                          href="#panelIniciarSesion" role="tab"><i
+                                              class="fas fa-user mr-1"></i>
+                                          Iniciar Sesion</a>
+                                  </li>
+                                  <li class="nav-item">
+                                      <a class="nav-link letra-gotham-bold" data-toggle="tab"
+                                          href="#panelRegistro" role="tab"><i
+                                              class="fas fa-user-plus mr-1"></i>
+                                          Registro</a>
+                                  </li>
+                              </ul>
+
+                              <!-- Tab panels -->
+                              <div class="tab-content">
+                                  <!--Panel Inicar Sesion-->
+                                  <div class="tab-pane fade in show active" id="panelIniciarSesion"
+                                      role="tabpanel">
+
+                                      <!--Body-->
+                                      <div class="modal-body mb-1">
+                                          <div class="md-form form-sm mb-5">
+                                              <i class="fas fa-envelope prefix"></i>
+                                              <input type="email" id="modalLRInput10"
+                                                  class="form-control form-control-sm validate">
+                                              <label data-error="wrong" data-success="right"
+                                                  for="modalLRInput10">Email</label>
+                                          </div>
+
+                                          <div class="md-form form-sm mb-4">
+                                              <i class="fas fa-lock prefix"></i>
+                                              <input type="password" id="modalLRInput11"
+                                                  class="form-control form-control-sm validate">
+                                              <label data-error="wrong" data-success="right"
+                                                  for="modalLRInput11">Contraseña</label>
+                                          </div>
+                                          <div class="text-center mt-2">
+                                              <button class="btn btn-info bg-vino letra-gotham-bold">Acceder
+                                                  <i class="fas fa-sign-in ml-1"></i></button>
+                                          </div>
+                                      </div>
+                                      <!--Footer-->
+                                      <div class="modal-footer">
+                                          <div class="options text-center text-md-right mt-1">
+                                              <p>¿No tienes cuenta? <a data-toggle="tab" href="#panelRegistro"
+                                                      role="tab" class="vino">Registrate</a></p>
+                                              <p><a href="#" class="vino">Olvide la Contraseña</a></p>
+                                          </div>
+                                          <button type="button"
+                                              class="btn outline-vino waves-effect ml-auto letra-gotham-bold"
+                                              data-dismiss="modal">Cerrar</button>
+                                      </div>
+
+                                  </div>
+                                  <!--/.Panel Iniciar Sesion-->
+
+                                  <!--Panel Registro-->
+                                  <div class="tab-pane fade" id="panelRegistro" role="tabpanel">
+
+                                      <!--Body-->
+                                      <div class="modal-body">
+                                          <div class="md-form form-sm mb-5">
+                                              <i class="fas fa-envelope prefix"></i>
+                                              <input type="email" id="modalLRInput12"
+                                                  class="form-control form-control-sm validate">
+                                              <label data-error="wrong" data-success="right"
+                                                  for="modalLRInput12">Email</label>
+                                          </div>
+
+                                          <div class="md-form form-sm mb-5">
+                                              <i class="fas fa-lock prefix"></i>
+                                              <input type="password" id="modalLRInput13"
+                                                  class="form-control form-control-sm validate">
+                                              <label data-error="wrong" data-success="right"
+                                                  for="modalLRInput13">Contraseña</label>
+                                          </div>
+
+                                          <div class="md-form form-sm mb-4">
+                                              <i class="fas fa-lock prefix"></i>
+                                              <input type="password" id="modalLRInput14"
+                                                  class="form-control form-control-sm validate">
+                                              <label data-error="wrong" data-success="right"
+                                                  for="modalLRInput14">Repetir Contraseña</label>
+                                          </div>
+
+                                          <div class="text-center form-sm mt-2 letra-gotham-bold">
+                                              <button class="btn btn-info bg-vino">Registrar <i
+                                                      class="fas fa-sign-in ml-1"></i></button>
+                                          </div>
+
+                                      </div>
+                                      <!--Footer-->
+                                      <div class="modal-footer">
+                                          <div class="options text-right">
+                                              <p class="pt-1">¿Ya tienes cuenta? <a data-toggle="tab"
+                                                      href="#panelIniciarSesion" role="tab"
+                                                      class="vino">Inicia Sesion</a></p>
+                                          </div>
+                                          <button type="button"
+                                              class="btn outline-vino waves-effect ml-auto vino letra-gotham-bold"
+                                              data-dismiss="modal">Cerrar</button>
+                                      </div>
+                                  </div>
+                                  <!--/.Panel Registro-->
+                              </div>
+
+                          </div>
+                      </div>
+                      <!--/.Content-->
+                  </div>
+              </div>
+              <!--fin Modal: Login / Register Form-->
+
+
+              <!-- Modal: modalCart -->
+              <div class="container">
+                  <div class="modal fade rounded" id="modalCart" tabindex="-1" role="dialog"
+                      aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-sm modal-side modal-top-right" role="document">
+                          <div class="modal-content">
+                              <!--Header-->
+                              <div class="modal-header">
+                                  <h4 class="modal-title w-100 text-center" id="myModalLabel">Mi Carrito</h4>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
+                              </div>
+                              <!--Body-->
+                              <div class="modal-body">
+
+                                  <table class="table table-hover">
+
+                                      <tbody>
+                                          <tr>
+                                              <td class="letra-gotham-light grey-text">Product 1
+                                              </td>
+                                              <td class="letra-gotham-bold grey-text">100$</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="letra-gotham-light grey-text">Product 2
+                                              </td>
+                                              <td class="letra-gotham-bold grey-text">100$</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="letra-gotham-light grey-text">Product 3
+                                              </td>
+                                              <td class="letra-gotham-bold grey-text">100$</td>
+                                          </tr>
+                                          <tr>
+                                              <td class="letra-gotham-light grey-text">Product 4
+                                              </td>
+                                              <td class="letra-gotham-bold grey-text">100$</td>
+                                          </tr>
+                                          <tr class="total">
+                                              <td>
+                                                  <h6 class=" mt-2 letra-gotham-bold grey-text">
+                                                      <strong>SubTotal</strong>
+                                                      <br>
+                                                      <br>
+                                                      <strong>Delivery</strong>
+                                                  </h6>
+                                              </td>
+                                              <td>
+                                                  <h6 class="mt-2 letra-gotham-bold grey-text">
+                                                      <strong id="subtotal">$20</strong>
+                                                      <br>
+                                                      <br>
+                                                      <strong id="delivery">$6.0</strong>
+                                                  </h6>
+                                              </td>
+                                          </tr>
+
+                                          <tr class="total">
+                                          <tr>
+                                              <td>
+                                                  <h4 class="mt-1 letra-gotham-bold grey-text">
+                                                      <strong>Total</strong>
+                                                  </h4>
+                                              </td>
+                                              <td>
+                                                  <h4 class="mt-1 letra-gotham-bold grey-text" id="Total">
+                                                      <strong>$60</strong>
+                                                  </h4>
+                                              </td>
+                                          </tr>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+
+                              </div>
+                              <!--Footer Modal-->
+                              <div class="modal-footer d-block text-center">
+                                  <button class="btn btn-primary bg-naranja letra-gotham-black">Ver
+                                      Carrito</button>
+
+                                  <button type="button" class="btn btn-outline-warning letra-gotham-black"
+                                      data-dismiss="modal">Procesar Pago</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- fin Modal: modalCart -->
+          </li>
+      </ul>
+  </nav>
+
+  <!--/.Navbar -->
+</section>
+<!-- Fin Barra de Navegacion -->
+
+<!-- Barra de Logo -->
+<section>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white m-1">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="Logo/Logo_Mesa de trabajo 2.png" class="img-fluid" alt="Responsive image">
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link letra-gotham-black outline-vino z-depth-1 rounded-pill pl-2 pt-3 m-2 text-center"
+                        href="index.html">
+                        <h4>Inicio</h4>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link letra-gotham-black outline-vino z-depth-1
+                     rounded-pill pl-2 pt-3 m-2 text-center" data-toggle="popover-click" data-placement="auto">
+                        <h4>Categorias</h4>
+                    </a>
+                    <div id="popover_content_list" style="display: none">
+
+                        <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                            Bebidas
+                        </a> <br>
+                        <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                            Carnes
+                        </a> <br>
+                        <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                            Frutas
+                        </a> <br>
+                        <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                            Abarrotes
+                        </a> <br>
+                        <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                            Mariscos
+                        </a> <br>
+                        <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                            Vegetales
+                        </a> <br>
+                        <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                            Granos
+                        </a> <br>
+                        <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                            Lacteos
+                        </a> <br>
+                        <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                            Limpieza
+                        </a> <br>
+                        <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                            Snacks
+                        </a> <br>
+
+
+                    </div>
+                </li>
+
+                <li class="nav-item ">
+                    <a class="nav-link letra-gotham-black outline-vino z-depth-1 rounded-pill pl-2 pt-3 m-2 text-center"
+                        href="categoria.html">
+                        <h4>Promociones</h4>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link letra-gotham-black outline-vino z-depth-1 rounded-pill pl-2 pt-3 m-2 text-center"
+                        href="contactanos.html">
+                        <h4>Contactanos</h4>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+</section>
+<!-- Fin Barra Logo -->
 
   <!-- Start your project here-->
-  <h1>Hello World</h1>
+  <div class="container my-5">
+
+ 
+    <!--Section: Content-->
+    <section class="contact-section dark-grey-text mb-5">
+      
+      <style>
+      	.contact-section .form .btn-floating {
+          left: 3px;
+        }
+      </style>
+
+      <!-- Form with header -->
+      <div class="card">
+
+        <!-- Grid row -->
+        <div class="row">
+
+          <!-- Grid column -->
+          <div class="col-lg-8">
+
+            <div class="card-body form">
+
+              <!-- Header -->
+              <h3 class="font-weight-bold dark-grey-text mt-4"><i class="fas fa-envelope pr-2 mr-1"></i>Contactanos</h3>
+
+              <!-- Grid row -->
+              <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="form-contact-name" class="form-control">
+                    <label for="form-contact-name" class="">Nombre</label>
+                  </div>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="form-contact-email" class="form-control">
+                    <label for="form-contact-email" class="">Email</label>
+                  </div>
+                </div>
+                <!-- Grid column -->
+
+              </div>
+              <!-- Grid row -->
+
+              <!-- Grid row -->
+              <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="form-contact-phone" class="form-control">
+                    <label for="form-contact-phone" class="">Telefono</label>
+                  </div>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6">
+                  <div class="md-form mb-0">
+                    <input type="text" id="form-contact-company" class="form-control">
+                    <label for="form-contact-company" class="">Compañia</label>
+                  </div>
+                </div>
+                <!-- Grid column -->
+
+              </div>
+              <!-- Grid row -->
+
+              <!-- Grid row -->
+              <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-12">
+                  <div class="md-form mb-0">
+                    <textarea id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
+                    <label for="form-contact-message">Mensaje</label>
+                    <a class="btn-floating btn-lg">
+                      <i class="far fa-paper-plane bg-vino white-text"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- Grid column -->
+
+              </div>
+              <!-- Grid row -->
+
+            </div>
+
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-lg-4">
+
+            <div class="card-body contact text-center h-100 white-text bg-vino">
+
+              <h3 class="font-weight-bold my-4 pb-2">Informacion de Contacto</h3>
+              <ul class="text-lg-left list-unstyled ml-4">
+                <li>
+                  <p><i class="fas fa-map-marker-alt pr-2 white-text"></i>Direccion</p>
+                </li>
+                <li>
+                  <p><i class="fas fa-phone pr-2 white-text"></i>Numero de Telefono</p>
+                </li>
+                <li>
+                  <p><i class="fas fa-envelope pr-2 white-text"></i>contact@example.com</p>
+                </li>
+              </ul>
+              <hr class="hr-light my-4">
+              <ul class="list-inline text-center list-unstyled">
+                <li class="list-inline-item">
+                  <a class="p-2 fa-lg tw-ic">
+                    <i class="fab fa-whatsapp white-text"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="p-2 fa-lg li-ic">
+                    <i class="fab fa-facebook white-text"> </i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a class="p-2 fa-lg ins-ic">
+                    <i class="fab fa-instagram white-text"> </i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+          <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Form with header -->
+
+    </section>
+    <!--Section: Content-->
+
+
+  </div>
   <!-- Start your project here-->
 
+  <!-- Footer -->
+  <footer class="page-footer font-small blue-grey lighten-5">
+
+    <div class="bg-vino">
+        <div class="container">
+
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0 letra-gotham-bold">© 2020 Copyright Justo Market</h6>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                    <!-- Whatsapp -->
+                    <a class="fb-ic border rounded-circle p-1 mr-4">
+                        <i class="fab fa-whatsapp white-text ml-1"> </i>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a class="fb-ic border rounded-circle p-1 mr-4">
+                        <i class="fab fa-facebook-f white-text ml-1"> </i>
+                    </a>
+
+                    <!--Instagram-->
+                    <a class="ins-ic border rounded-circle p-1 mr-4">
+                        <i class="fab fa-instagram white-text m-1"> </i>
+                    </a>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
+
+        </div>
+    </div>
+</footer>
+<!-- Footer -->
+</div>
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
@@ -31,6 +573,8 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+   <!-- Extra JavaScript -->
+   <script type="text/javascript" src="js/extras.js"></script>
 </body>
 
 </html>

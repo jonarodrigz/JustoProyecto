@@ -17,734 +17,917 @@
 </head>
 
 <body>
-
-  <!-- Barra de Navegacion -->
-<section>
-  <!--Navbar -->
   <div class="container">
-      <nav class="mb-1 navbar navbar-dark navbar-expand-sm bg-naranja info-color">
+   <!-- Barra de Navegacion -->
+   <section>
+    <!--Navbar -->
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-              aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
+    <nav class="mb-1 navbar navbar-dark navbar-expand-sm bg-naranja info-color">
 
-          <div class="collapse navbar-collapse " id="navbarSupportedContent-4">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-              <a class="navbar-brand bg-amarillo rounded-pill p-1 letra-gotham-black" href="#">Descarga nuestro
-                  catalogo</a>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent-4">
+            <a class="navbar-brand bg-amarillo rounded-pill p-1 letra-gotham-black" href="#">Descarga nuestro
+                catalogo</a>
+        </div>
 
-          </div>
+        <ul class="navbar-nav navbar-expand">
+            <li class="nav-item">
+                <span class="text ml-2 p-2 d-none d-md-block d-lg-block">
+                    <a class="nav-link letra-gotham-bold" data-toggle="modal" data-target="#modalLRForm"
+                        href="login.html">
+                        <i class="fa fa-user"></i> Mi Cuenta </a>
+                </span>
+                <span class="d-block d-sm-block d-md-none d-lg-none">
+                    <a class="nav-link " data-toggle="modal" data-target="#modalLRForm" href="login.html"><i
+                            class="fa fa-user"></i></a></span>
+            </li>
+            <li class="nav-item">
+                <span class="text ml-2 p-2 d-none d-md-block d-lg-block">
+                    <a class="nav-link letra-gotham-bold" data-toggle="modal" data-target="#modalCart"
+                        role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        Mi Carrito <span class="badge bg-vino letra-gotham-bold">$0.0</span></a>
+                </span>
+                <span class="d-block d-sm-block d-md-none d-lg-none">
+                    <a class="nav-link  letra-gotham-bold" data-toggle="modal" data-target="#modalCart" href="#"
+                        role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i><span
+                            class="badge bg-vino ml-2 letra-gotham-bold">$0.0</span>
+                    </a>
+                </span>
+                <!--Modal: Login / Register Form-->
+                <div class="modal fade" id="modalLRForm" tabindex="-1" role="dialog"
+                    aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog cascading-modal" role="document">
+                        <!--Content-->
+                        <div class="modal-content">
 
-          <ul class="navbar-nav navbar-expand">
-              <li class="nav-item">
-                  <span class="text ml-2 p-2 d-none d-md-block d-lg-block"><a class="nav-link letra-gotham-bold"
-                          href="login.html">
-                          <i class="fa fa-user"></i> Mi Cuenta </a>
-                  </span>
-                  <span class="d-block d-sm-block d-md-none d-lg-none">
-                      <a class="nav-link " href="login.html"><i class="fa fa-user"></i></a></span>
-              </li>
-              <li class="nav-item">
-                  <span class="text ml-2 p-2 d-none d-md-block d-lg-block">
-                      <a class="nav-link letra-gotham-bold" data-toggle="modal" data-target="#modalCart" role="button"
-                          aria-haspopup="true" aria-expanded="false">
-                          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                          Mi Carrito <span class="badge bg-vino letra-gotham-bold">$0.0</span></a>
-                  </span>
-                  <span class="d-block d-sm-block d-md-none d-lg-none">
-                      <a class="nav-link  letra-gotham-bold" data-toggle="modal" data-target="#modalCart" href="#"
-                          role="button" aria-haspopup="true" aria-expanded="false">
-                          <i class="fa fa-shopping-cart" aria-hidden="true"></i><span
-                              class="badge bg-vino ml-2 letra-gotham-bold">$0.0</span>
-                      </a>
-                  </span>
-                  <!-- Modal: modalCart -->
-                  <div class="container">
-                      <div class="modal fade rounded" id="modalCart" tabindex="-1" role="dialog"
-                          aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-sm modal-side modal-top-right" role="document">
-                              <div class="modal-content">
-                                  <!--Header-->
-                                  <div class="modal-header">
-                                      <h4 class="modal-title w-100 text-center" id="myModalLabel">Mi Carrito</h4>
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                          <span aria-hidden="true">&times;</span>
-                                      </button>
-                                  </div>
-                                  <!--Body-->
-                                  <div class="modal-body">
+                            <!--Modal cascading tabs-->
+                            <div class="modal-c-tabs">
 
-                                      <table class="table table-hover">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs md-tabs tabs-2 bg-vino" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link letra-gotham-bold" data-toggle="tab"
+                                            href="#panelIniciarSesion" role="tab"><i
+                                                class="fas fa-user mr-1"></i>
+                                            Iniciar Sesion</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link letra-gotham-bold" data-toggle="tab"
+                                            href="#panelRegistro" role="tab"><i
+                                                class="fas fa-user-plus mr-1"></i>
+                                            Registro</a>
+                                    </li>
+                                </ul>
 
-                                          <tbody>
-                                              <tr>
+                                <!-- Tab panels -->
+                                <div class="tab-content">
+                                    <!--Panel Inicar Sesion-->
+                                    <div class="tab-pane fade in show active" id="panelIniciarSesion"
+                                        role="tabpanel">
 
-                                                  <td class="letra-gotham-light grey-text text-right">Product 1</td>
-                                                  <td class="letra-gotham-bold grey-text">100$</td>
+                                        <!--Body-->
+                                        <div class="modal-body mb-1">
+                                            <div class="md-form form-sm mb-5">
+                                                <i class="fas fa-envelope prefix"></i>
+                                                <input type="email" id="modalLRInput10"
+                                                    class="form-control form-control-sm validate">
+                                                <label data-error="wrong" data-success="right"
+                                                    for="modalLRInput10">Email</label>
+                                            </div>
 
-                                              </tr>
-                                              <tr>
-                                                  <td class="letra-gotham-light grey-text text-right">Product 2</td>
-                                                  <td class="letra-gotham-bold grey-text">100$</td>
+                                            <div class="md-form form-sm mb-4">
+                                                <i class="fas fa-lock prefix"></i>
+                                                <input type="password" id="modalLRInput11"
+                                                    class="form-control form-control-sm validate">
+                                                <label data-error="wrong" data-success="right"
+                                                    for="modalLRInput11">Contraseña</label>
+                                            </div>
+                                            <div class="text-center mt-2">
+                                                <button class="btn btn-info bg-vino letra-gotham-bold">Acceder
+                                                    <i class="fas fa-sign-in ml-1"></i></button>
+                                            </div>
+                                        </div>
+                                        <!--Footer-->
+                                        <div class="modal-footer">
+                                            <div class="options text-center text-md-right mt-1">
+                                                <p>¿No tienes cuenta? <a data-toggle="tab" href="#panelRegistro"
+                                                        role="tab" class="vino">Registrate</a></p>
+                                                <p><a href="#" class="vino">Olvide la Contraseña</a></p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn outline-vino waves-effect ml-auto letra-gotham-bold"
+                                                data-dismiss="modal">Cerrar</button>
+                                        </div>
 
-                                              </tr>
-                                              <tr>
-                                                  <td class="letra-gotham-light grey-text text-right">Product 3</td>
-                                                  <td class="letra-gotham-bold grey-text">100$</td>
+                                    </div>
+                                    <!--/.Panel Iniciar Sesion-->
 
-                                              </tr>
-                                              <tr>
-                                                  <td class="letra-gotham-light grey-text text-right">Product 4</td>
-                                                  <td class="letra-gotham-bold grey-text">100$</td>
+                                    <!--Panel Registro-->
+                                    <div class="tab-pane fade" id="panelRegistro" role="tabpanel">
 
-                                              </tr>
-                                              <tr class="total">
+                                        <!--Body-->
+                                        <div class="modal-body">
+                                            <div class="md-form form-sm mb-5">
+                                                <i class="fas fa-envelope prefix"></i>
+                                                <input type="email" id="modalLRInput12"
+                                                    class="form-control form-control-sm validate">
+                                                <label data-error="wrong" data-success="right"
+                                                    for="modalLRInput12">Email</label>
+                                            </div>
 
-                                                  <td>
-                                                      <h6 class=" mt-2 letra-gotham-bold grey-text text-right">
-                                                          <strong>SubTotal</strong>
-                                                          <br>
-                                                          <br>
-                                                          <strong>Delivery</strong>
-                                                      </h6>
-                                                  </td>
-                                                  <td>
-                                                      <h6 class="mt-2 letra-gotham-bold grey-text">
-                                                          <strong>$20</strong>
-                                                          <br>
-                                                          <br>
-                                                          <strong>$6.0</strong>
-                                                      </h6>
-                                                  </td>
+                                            <div class="md-form form-sm mb-5">
+                                                <i class="fas fa-lock prefix"></i>
+                                                <input type="password" id="modalLRInput13"
+                                                    class="form-control form-control-sm validate">
+                                                <label data-error="wrong" data-success="right"
+                                                    for="modalLRInput13">Contraseña</label>
+                                            </div>
 
+                                            <div class="md-form form-sm mb-4">
+                                                <i class="fas fa-lock prefix"></i>
+                                                <input type="password" id="modalLRInput14"
+                                                    class="form-control form-control-sm validate">
+                                                <label data-error="wrong" data-success="right"
+                                                    for="modalLRInput14">Repetir Contraseña</label>
+                                            </div>
 
+                                            <div class="text-center form-sm mt-2 letra-gotham-bold">
+                                                <button class="btn btn-info bg-vino">Registrar <i
+                                                        class="fas fa-sign-in ml-1"></i></button>
+                                            </div>
 
-                                              </tr>
+                                        </div>
+                                        <!--Footer-->
+                                        <div class="modal-footer">
+                                            <div class="options text-right">
+                                                <p class="pt-1">¿Ya tienes cuenta? <a data-toggle="tab"
+                                                        href="#panelIniciarSesion" role="tab"
+                                                        class="vino">Inicia Sesion</a></p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn outline-vino waves-effect ml-auto vino letra-gotham-bold"
+                                                data-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                    <!--/.Panel Registro-->
+                                </div>
 
-
-                                              <tr class="total">
-                                              <tr>
-                                                  <td>
-                                                      <h4 class="mt-1 letra-gotham-bold grey-text text-right">
-                                                          <strong>Total</strong>
-                                                      </h4>
-                                                  </td>
-                                                  <td>
-                                                      <h4 class="mt-1 letra-gotham-bold grey-text">
-                                                          <strong>$60</strong>
-                                                      </h4>
-                                                  </td>
-
-                                              </tr>
-                                              </tr>
-
-                                          </tbody>
-                                      </table>
-
-                                  </div>
-                                  <!--Footer Modal-->
-                                  <div class="modal-footer d-block text-center">
-                                      <a class="btn btn-primary bg-naranja letra-gotham-black">Ver Carrito</a>
-
-                                      <a type="button" class="btn btn-outline-warning letra-gotham-black"
-                                          data-dismiss="modal">Procesar Pago</a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <!-- Modal: modalCart -->
-              </li>
-          </ul>
+                            </div>
+                        </div>
+                        <!--/.Content-->
+                    </div>
+                </div>
+                <!--fin Modal: Login / Register Form-->
 
 
-  </div>
-  </nav>
-  <!--/.Navbar -->
+                <!-- Modal: modalCart -->
+                <div class="container">
+                    <div class="modal fade rounded" id="modalCart" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-sm modal-side modal-top-right" role="document">
+                            <div class="modal-content">
+                                <!--Header-->
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100 text-center" id="myModalLabel">Mi Carrito</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <!--Body-->
+                                <div class="modal-body">
 
+                                    <table class="table table-hover">
 
+                                        <tbody>
+                                            <tr>
+                                                <td class="letra-gotham-light grey-text">Product 1
+                                                </td>
+                                                <td class="letra-gotham-bold grey-text">100$</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="letra-gotham-light grey-text">Product 2
+                                                </td>
+                                                <td class="letra-gotham-bold grey-text">100$</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="letra-gotham-light grey-text">Product 3
+                                                </td>
+                                                <td class="letra-gotham-bold grey-text">100$</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="letra-gotham-light grey-text">Product 4
+                                                </td>
+                                                <td class="letra-gotham-bold grey-text">100$</td>
+                                            </tr>
+                                            <tr class="total">
+                                                <td>
+                                                    <h6 class=" mt-2 letra-gotham-bold grey-text">
+                                                        <strong>SubTotal</strong>
+                                                        <br>
+                                                        <br>
+                                                        <strong>Delivery</strong>
+                                                    </h6>
+                                                </td>
+                                                <td>
+                                                    <h6 class="mt-2 letra-gotham-bold grey-text">
+                                                        <strong id="subtotal">$20</strong>
+                                                        <br>
+                                                        <br>
+                                                        <strong id="delivery">$6.0</strong>
+                                                    </h6>
+                                                </td>
+                                            </tr>
 
+                                            <tr class="total">
+                                            <tr>
+                                                <td>
+                                                    <h4 class="mt-1 letra-gotham-bold grey-text">
+                                                        <strong>Total</strong>
+                                                    </h4>
+                                                </td>
+                                                <td>
+                                                    <h4 class="mt-1 letra-gotham-bold grey-text" id="Total">
+                                                        <strong>$60</strong>
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <!--Footer Modal-->
+                                <div class="modal-footer d-block text-center">
+                                    <button class="btn btn-primary bg-naranja letra-gotham-black">Ver
+                                        Carrito</button>
+
+                                    <button type="button" class="btn btn-outline-warning letra-gotham-black"
+                                        data-dismiss="modal">Procesar Pago</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin Modal: modalCart -->
+            </li>
+        </ul>
+    </nav>
+
+    <!--/.Navbar -->
 </section>
 <!-- Fin Barra de Navegacion -->
-<!-- Barra de Logo -->
-<section>
-  <div class="container">
+
+    <!-- Barra de Logo -->
+    <section>
       <nav class="navbar navbar-expand-lg navbar-light bg-white m-1">
 
-
-          <a class="navbar-brand" href="index.html">
-              <img src="Logo/Logo_Mesa de trabajo 1.png" class="img-fluid" alt="Responsive image">
-          </a>
-
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                  <li class="nav-item ">
-                      <a class="nav-link letra-gotham-black outline-vino z-depth-1 rounded-pill pl-2 pt-3 m-2 text-center"
-                          href="index.html">
-                          <h4>Inicio</h4>
-                      </a>
-                  </li>
-                  <li class="nav-item ">
-                      <a class="nav-link letra-gotham-black outline-vino z-depth-1 rounded-pill pl-2 pt-3 m-2 text-center"
-                          href="categoria.html">
-                          <h4>Categorias</h4>
-                      </a>
-                  </li>
-                  <li class="nav-item ">
-                      <a class="nav-link letra-gotham-black outline-vino z-depth-1 rounded-pill pl-2 pt-3 m-2 text-center"
-                          href="categoria.html">
-                          <h4>Promociones</h4>
-                      </a>
-                  </li>
-                  <li class="nav-item ">
-                      <a class="nav-link letra-gotham-black outline-vino z-depth-1 rounded-pill pl-2 pt-3 m-2 text-center"
-                          href="contactanos.html">
-                          <h4>Contactanos</h4>
-                      </a>
-                  </li>
-              </ul>
-          </div>
-
-      </nav>
-  </div>
-</section>
-<!-- Fin Barra Logo -->
-
-  <section>
-    <div class="container">
-      <div class="row bg-verde p-4">
-        <div class="col text-center">
-          <h1 class="letra-gotham-black white-text w-100">VERDURAS</h1>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <nav class="navbar text-dark bg-white justify-content-between z-depth-0">
-        <a class="navbar-brand" href="index.html">Inicio</a>
-        <a class="navbar-brand" href="categoria.html">Verduras</a>
-        <a class="navbar-brand" href="categoria.html">Tomates</a>
-        <form class="form-inline my-1">
-          <div class="md-form form-sm my-0">
-            <input class="form-control form-control-sm mr-sm-2 mb-0" type="text" placeholder="Search"
-              aria-label="Search">
-          </div>
-          <button class="btn btn-outline-white btn-sm my-0" type="submit">Search</button>
-        </form>
-      </nav>
-    </div>
-  </section>
-
-  <!-- DetalleProducto -->
-  <div class="container my-5 py-5 z-depth-1">
+        <a class="navbar-brand" href="index.html">
+          <img src="Logo/Logo_Mesa de trabajo 2.png" class="img-fluid" alt="Responsive image">
+        </a>
 
 
-    <!--Section: Content-->
-    <section class="text-center">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- Section heading -->
-     
-      <div class="row">
-        <div class="col-lg-6">
-
-          <!--Carousel Wrapper-->
-          <div id="carousel-thumb1" class="carousel slide carousel-fade carousel-thumbnails mb-5 pb-4"
-            data-ride="carousel">
-
-            <!--Slides-->
-            <div class="carousel-inner text-center text-md-left" role="listbox">
-              <div class="carousel-item active">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" alt="First slide"
-                  class="img-fluid">
-              </div>
-              <div class="carousel-item">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/2.jpg" alt="Second slide"
-                  class="img-fluid">
-              </div>
-              <div class="carousel-item">
-                <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/20.jpg" alt="Third slide"
-                  class="img-fluid">
-              </div>
-            </div>
-            <!--/.Slides-->
-
-            <!--Thumbnails-->
-            <a class="carousel-control-prev" href="#carousel-thumb1" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel-thumb1" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-            <!--/.Thumbnails-->
-
-          </div>
-          <!--/.Carousel Wrapper-->
-
-          <div class="row mb-4">
-            <div class="col-md-12">
-              <div id="mdb-lightbox-ui"></div>
-              <div class="mdb-lightbox no-margin">
-                <figure class="col-md-4">
-                  <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg"
-                    data-size="1600x1067">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg"
-                      class="img-fluid">
-                  </a>
-                </figure>
-                <figure class="col-md-4">
-                  <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/2.jpg"
-                    data-size="1600x1067">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/2.jpg"
-                      class="img-fluid">
-                  </a>
-                </figure>
-                <figure class="col-md-4">
-                  <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/20.jpg"
-                    data-size="1600x1067">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/20.jpg"
-                      class="img-fluid">
-                  </a>
-                </figure>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-lg-5 text-center text-md-left">
-
-          <h2 class="h2-responsive text-center text-md-left product-name 
-                  font-weight-bold grey-text mb-1 ml-xl-0 ml-4 letra-gotham-bold">
-            Tomates</h2>
-          <h3 class="h3-responsive text-center text-md-left mb-5 ml-xl-0 ml-4 
-              letra-gotham-light">
-            <span class="grey-text">Libra</span>
-          </h3>
-
-          <div class="font-weight-normal">
-
-            <p class="ml-xl-0 ml-4  letra-gotham-light">Lorem ipsum dolor sit amet,
-              consectetur adipisicing
-              elit. Sapiente nesciunt atque nemo neque ut officiis nostrum incidunt
-              maiores, magni optio et sunt suscipit iusto nisi totam quis, nobis
-              mollitia necessitatibus.</p>
-
-            <br>
-            <br>
-            <p class="ml-xl-0 ml-4">
-            <h2 class="letra-gotham-black vino">$0.25 </h2>
-            <h5 class="letra-gotham-light">antes $0.30</h5>
-            </p>
-
-            <br>
-            <br>
-
-            <div class="row no-gutters align-items-center">
-              <div class="col-4 text-center">
-                <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-minus"></i></a>
-              </div>
-              <div class="col-4 text-center">
-                <h3 class="border border-grey btn-rounded letra-gotham-light">1</h3>
-              </div>
-              <div class="col-4 text-center">
-                <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i class="fa fa-plus"></i></a>
-              </div>
-            </div>
-            <div class="row no-gutters text-center">
-              <div class="col">
-                <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja">
-                  <h6 class="h5-responsive letra-gotham-light">Añadir a <br>Carrito <i class="fa fa-shopping-cart"
-                      aria-hidden="true"></i></h6>
-                </button>
-              </div>
-            </div>
-
-
-
-          </div>
-        </div>
-      </div>
-      <!-- Carousel Productos Sugeridos-->
-      <nav class="navbar navbar-default bg-white z-depth-0">
-        <div class="container ">
-
-          <h3 class="font-weight-bold vino">Productos Sugeridos</h3>
-
-        </div>
-      </nav>
-      <!--Carousel Wrapper-->
-      <div class="container">
-        <div id="carousel-example-multi2" class="carousel slide carousel-multi-item v-2" data-ride="carousel">
-
-          <!--Controls-->
-          <div class="controls-top">
-            <a class="btn-floating bg-vino" href="#carousel-example-multi2" data-slide="prev"><i
-                class="fas fa-chevron-left"></i></a>
-            <a class="btn-floating bg-vino" href="#carousel-example-multi2" data-slide="next"><i
-                class="fas fa-chevron-right"></i></a>
-          </div>
-          <!--/.Controls-->
-
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example-multi2" data-slide-to="0" class="active bg-vino"></li>
-            <li data-target="#carousel-example-multi2" data-slide-to="1" class="bg-vino">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link letra-gotham-black outline-vino z-depth-1 rounded-pill pl-2 pt-3 m-2 text-center"
+                href="index.html">
+                <h4>Inicio</h4>
+              </a>
             </li>
-            <li data-target="#carousel-example-multi2" data-slide-to="2" class="bg-vino">
+            <li class="nav-item ">
+              <a class="nav-link letra-gotham-black outline-vino z-depth-1
+                   rounded-pill pl-2 pt-3 m-2 text-center" data-toggle="popover-click" data-placement="auto">
+                <h4>Categorias</h4>
+              </a>
+              <div id="popover_content_list" style="display: none">
+
+                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                  Bebidas
+                </a> <br>
+                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                  Carnes
+                </a> <br>
+                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                  Frutas
+                </a> <br>
+                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                  Abarrotes
+                </a> <br>
+                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                  Mariscos
+                </a> <br>
+                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                  Vegetales
+                </a> <br>
+                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                  Granos
+                </a> <br>
+                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                  Lacteos
+                </a> <br>
+                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                  Limpieza
+                </a> <br>
+                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                  Snacks
+                </a> <br>
+
+
+              </div>
             </li>
 
-
-          </ol>
-          <!--/.Indicators-->
-
-          <div class="carousel-inner v-2" role="listbox">
-
-            <div class="carousel-item active">
-              <div class="col-12 col-md-4">
-                <div class="card mb-1">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
-                    alt="Card image cap">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col text-center">
-                        <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
-                      </div>
-                    </div>
-
-                    <div class="row align-items-center d-flex d-inline-block">
-
-                      <div class="col-6 align-baseline">
-                        <h2 class="letra-gotham-black vino">$0.25</h2>
-                        <h5 class="letra-gotham-light grey-text">antes $0.30
-                        </h5>
-                      </div>
-                      <div class="col-6">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col-4 text-center">
-                            <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                class="fa fa-minus"></i></a>
-                          </div>
-                          <div class="col-4 text-center">
-                            <h3 class="border border-grey btn-rounded ">1
-                            </h3>
-                          </div>
-                          <div class="col-4 text-center">
-                            <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                class="fa fa-plus"></i></a>
-                          </div>
-                        </div>
-                        <div class="row no-gutters text-center">
-                          <div class="col">
-                            <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
-                                class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-12 col-md-4">
-                <div class="card mb-1">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (34).jpg"
-                    alt="Card image cap">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col text-center">
-                        <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
-                      </div>
-                    </div>
-
-                    <div class="row align-items-center d-flex d-inline-block">
-
-                      <div class="col-6 align-baseline">
-                        <h2 class="letra-gotham-black vino">$0.25</h2>
-                        <h5 class="letra-gotham-light grey-text">antes $0.30
-                        </h5>
-                      </div>
-                      <div class="col-6">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col-4 text-center">
-                            <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                class="fa fa-minus"></i></a>
-                          </div>
-                          <div class="col-4 text-center">
-                            <h3 class="border border-grey btn-rounded ">1
-                            </h3>
-                          </div>
-                          <div class="col-4 text-center">
-                            <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                class="fa fa-plus"></i></a>
-                          </div>
-                        </div>
-                        <div class="row no-gutters text-center">
-                          <div class="col">
-                            <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
-                                class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-12 col-md-4">
-                <div class="card mb-1">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (38).jpg"
-                    alt="Card image cap">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col text-center">
-                        <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
-                      </div>
-                    </div>
-
-                    <div class="row align-items-center d-flex d-inline-block">
-
-                      <div class="col-6 align-baseline">
-                        <h2 class="letra-gotham-black vino">$0.25</h2>
-                        <h5 class="letra-gotham-light grey-text">antes $0.30
-                        </h5>
-                      </div>
-                      <div class="col-6">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col-4 text-center">
-                            <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                class="fa fa-minus"></i></a>
-                          </div>
-                          <div class="col-4 text-center">
-                            <h3 class="border border-grey btn-rounded ">1
-                            </h3>
-                          </div>
-                          <div class="col-4 text-center">
-                            <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                class="fa fa-plus"></i></a>
-                          </div>
-                        </div>
-                        <div class="row no-gutters text-center">
-                          <div class="col">
-                            <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
-                                class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-12 col-md-4">
-                <div class="card mb-1">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (29).jpg"
-                    alt="Card image cap">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col text-center">
-                        <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
-                      </div>
-                    </div>
-
-                    <div class="row align-items-center d-flex d-inline-block">
-
-                      <div class="col-6 align-baseline">
-                        <h2 class="letra-gotham-black vino">$0.25</h2>
-                        <h5 class="letra-gotham-light grey-text">antes $0.30
-                        </h5>
-                      </div>
-                      <div class="col-6">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col-4 text-center">
-                            <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                class="fa fa-minus"></i></a>
-                          </div>
-                          <div class="col-4 text-center">
-                            <h3 class="border border-grey btn-rounded ">1
-                            </h3>
-                          </div>
-                          <div class="col-4 text-center">
-                            <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                class="fa fa-plus"></i></a>
-                          </div>
-                        </div>
-                        <div class="row no-gutters text-center">
-                          <div class="col">
-                            <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
-                                class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-12 col-md-4">
-                <div class="card mb-1">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (30).jpg"
-                    alt="Card image cap">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col text-center">
-                        <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
-                      </div>
-                    </div>
-
-                    <div class="row align-items-center d-flex d-inline-block">
-
-                      <div class="col-6 align-baseline">
-                        <h2 class="letra-gotham-black vino">$0.25</h2>
-                        <h5 class="letra-gotham-light grey-text">antes $0.30
-                        </h5>
-                      </div>
-                      <div class="col-6">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col-4 text-center">
-                            <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                class="fa fa-minus"></i></a>
-                          </div>
-                          <div class="col-4 text-center">
-                            <h3 class="border border-grey btn-rounded ">1
-                            </h3>
-                          </div>
-                          <div class="col-4 text-center">
-                            <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                class="fa fa-plus"></i></a>
-                          </div>
-                        </div>
-                        <div class="row no-gutters text-center">
-                          <div class="col">
-                            <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
-                                class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-12 col-md-4">
-                <div class="card mb-1">
-                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/img (27).jpg"
-                    alt="Card image cap">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col text-center">
-                        <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
-                      </div>
-                    </div>
-
-                    <div class="row align-items-center d-flex d-inline-block">
-
-                      <div class="col-6 align-baseline">
-                        <h2 class="letra-gotham-black vino">$0.25</h2>
-                        <h5 class="letra-gotham-light grey-text">antes $0.30
-                        </h5>
-                      </div>
-                      <div class="col-6">
-                        <div class="row no-gutters align-items-center">
-                          <div class="col-4 text-center">
-                            <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                class="fa fa-minus"></i></a>
-                          </div>
-                          <div class="col-4 text-center">
-                            <h3 class="border border-grey btn-rounded ">1
-                            </h3>
-                          </div>
-                          <div class="col-4 text-center">
-                            <a type="button" class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                class="fa fa-plus"></i></a>
-                          </div>
-                        </div>
-                        <div class="row no-gutters text-center">
-                          <div class="col">
-                            <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
-                                class="fa fa-shopping-cart" aria-hidden="true"></i></button>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <li class="nav-item ">
+              <a class="nav-link letra-gotham-black outline-vino z-depth-1 rounded-pill pl-2 pt-3 m-2 text-center"
+                href="categoria.html">
+                <h4>Promociones</h4>
+              </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link letra-gotham-black outline-vino z-depth-1 rounded-pill pl-2 pt-3 m-2 text-center"
+                href="contactanos.html">
+                <h4>Contactanos</h4>
+              </a>
+            </li>
+          </ul>
         </div>
+
+      </nav>
+
     </section>
-  </div>
+    <!-- Fin Barra Logo -->
+
+    <!-- Baner texto -->
+    <section>
+      <div class="container bg-verde text-center p-4">
+        <h1 class="letra-gotham-black white-text w-100">VERDURAS</h1>
+      </div>
+    </section>
+    <!-- Baner Texto -->
+
+    <!-- Barra Buscar -->
+    <section>
+
+      <nav class="navbar navbar-light   z-depth-0 pt-3">
+        <div>
+          <a class="grey-text letra-gotham-light" href="index.html">Inicio -</a>
+          <a class="grey-text letra-gotham-light" href="categoria.html">CategoriaSeleccionada -</a>
+          <a class="grey-text letra-gotham-light" href="categoria.html">Cebolla</a>
+        </div>
+        <form class="form-inline my-1">
+          <div class="input-group form-lg form-2 pl-0">
+            <input class="form-control my-0 py-3 z-depth-1 buscar-left" type="text" placeholder="Search"
+              aria-label="Search">
+              <div class="input-group-append">
+                <span class="input-group-text bg-naranja buscar-right" id="basic-text1">
+                    <button id="buscar" type="button" class="vino bg-naranja nopadding border-0">
+                        <i class="fas fa-search " aria-hidden="true"></i>
+                    </button>
+                </span>
+            </div>
+          </div>
+        </form>
+
+      </nav>
+
+    </section>
+    <!-- Fin Barra Buscar -->
+
+    <!-- DetalleProducto -->
+    <section>
+      <div class="container my-5 py-5 z-depth-1">
+
+        <!--Section: Content-->
+        <section class="text-center">
+
+          <!-- Section heading -->
+          <div class="row">
+            <div class="col-lg-6">
+
+              <!--Carousel Wrapper-->
+              <div id="carousel-thumb1" class="carousel slide carousel-fade carousel-thumbnails mb-5 pb-4"
+                data-ride="carousel">
+
+                <!--Slides-->
+                <div class="carousel-inner text-center text-md-left" role="listbox">
+                  <div class="carousel-item active">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg" alt="First slide"
+                      class="img-fluid">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/2.jpg"
+                      alt="Second slide" class="img-fluid">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/20.jpg"
+                      alt="Third slide" class="img-fluid">
+                  </div>
+                </div>
+                <!--/.Slides-->
+
+                <!--Thumbnails-->
+                <a class="carousel-control-prev" href="#carousel-thumb1" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel-thumb1" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                  <span class="sr-only ">Next</span>
+                </a>
+                <!--/.Thumbnails-->
+
+              </div>
+              <!--/.Carousel Wrapper-->
+
+              <div class="row mb-4">
+                <div class="col-md-12">
+                  <div id="mdb-lightbox-ui"></div>
+                  <div class="mdb-lightbox no-margin">
+                    <figure class="col-4">
+                      <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg"
+                        data-size="1600x1067">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg"
+                          class="img-fluid">
+                      </a>
+                    </figure>
+                    <figure class="col-4">
+                      <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/2.jpg"
+                        data-size="1600x1067">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/2.jpg"
+                          class="img-fluid">
+                      </a>
+                    </figure>
+                    <figure class="col-4">
+                      <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/20.jpg"
+                        data-size="1600x1067">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/20.jpg"
+                          class="img-fluid">
+                      </a>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-lg-5 text-center text-md-left">
+
+              <h2 class="h2-responsive text-center text-md-left product-name 
+                  font-weight-bold grey-text mb-1 ml-xl-0 ml-4 letra-gotham-bold">
+                Tomates</h2>
+              <h3 class="h3-responsive text-center text-md-left mb-5 ml-xl-0 ml-4 
+              letra-gotham-light">
+                <span class="grey-text">Libra</span>
+              </h3>
+
+              <div class="font-weight-normal">
+
+                <p class="ml-xl-0 ml-4  letra-gotham-light">Lorem ipsum dolor sit amet,
+                  consectetur adipisicing
+                  elit. Sapiente nesciunt atque nemo neque ut officiis nostrum incidunt
+                  maiores, magni optio et sunt suscipit iusto nisi totam quis, nobis
+                  mollitia necessitatibus.</p>
+
+                <br>
+                <br>
+                <p class="ml-xl-0 ml-4">
+                <h2 class="h2-responsive letra-gotham-black vino ml-xl-0 ml-4">$0.25 </h2>
+                <h5 class="h5-responsive letra-gotham-light ml-xl-0 ml-4">antes $0.30</h5>
+                </p>
+
+                <br>
+                <br>
+
+                <div class="row no-gutters align-items-center">
+                  <div class="col-4 text-center">
+                    <a type="button" class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
+                        class="fa fa-minus"></i></a>
+                  </div>
+                  <div class="col-4 text-center">
+                    <h3 class="border border-grey btn-rounded letra-gotham-light mt-2 ">1</h3>
+                  </div>
+                  <div class="col-4 text-center">
+                    <a type="button" class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
+                        class="fa fa-plus"></i></a>
+                  </div>
+                </div>
+                <div class="row no-gutters text-center">
+                  <div class="col">
+                    <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja">
+                      <h6 class="h5-responsive letra-gotham-light">Añadir a <br>Carrito <i class="fa fa-shopping-cart"
+                          aria-hidden="true"></i></h6>
+                    </button>
+                  </div>
+                </div>
 
 
-  </section>
-  <!--Section: Content-->
+
+              </div>
+            </div>
+          </div>
+          <!-- Productos Destacados -->
+          <section>
+
+            <nav class="navbar navbar-default bg-white z-depth-0">
+              <div class="container ">
+                <a class="navbar-brand ">
+                  <h2 class="h2-responsive font-weight-bold vino">Productos Sugeridos</h2>
+                </a>
+              </div>
+            </nav>
+            <!--Carousel Wrapper-->
+
+            <div id="carousel-example-multi" class="carousel  carousel-multi-item v-2" data-ride="carousel">
+
+              <!--Controls-->
+              <div class="controls-top">
+                <a class="btn-floating bg-vino" href="#carousel-example-multi" data-slide="prev"><i
+                    class="fas fa-chevron-left"></i></a>
+                <a class="btn-floating bg-vino" href="#carousel-example-multi" data-slide="next"><i
+                    class="fas fa-chevron-right"></i></a>
+              </div>
+              <!--/.Controls-->
+
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example-multi" data-slide-to="0" class="active bg-vino"></li>
+                <li data-target="#carousel-example-multi" data-slide-to="1" class="bg-vino"></li>
+                <li data-target="#carousel-example-multi" data-slide-to="2" class="bg-vino"></li>
+                <li data-target="#carousel-example-multi" data-slide-to="3" class="bg-vino"></li>
+                <li data-target="#carousel-example-multi" data-slide-to="4" class="bg-vino"></li>
+                <li data-target="#carousel-example-multi" data-slide-to="5" class="bg-vino"></li>
+
+
+              </ol>
+              <!--/.Indicators-->
+
+              <div class="carousel-inner v-2" role="listbox">
+
+                <div class="carousel-item active no-gutters">
+                  <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-1">
+                      <a class="waves-effect waves-light" data-toggle="modal" data-target="#modalDetail">
+                        <img class="card-img-top p-3" src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                          alt="Card image cap"></a>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col text-center">
+                            <h3 class="h3-responsive" style="font-family: Gotham-Light;">Tomates</h3>
+                          </div>
+                        </div>
+
+                        <div class="row align-items-center ">
+
+                          <div class="col-6 col-md-6 col-lg-6 nopadding">
+
+                            <h4 id="precio" class="h4-responsive letra-gotham-black vino">$0.25</h4>
+
+                            <h6 id="precioAnterior" class="letra-gotham-light grey-text">antes $0.30</h6>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-6 nopadding">
+                            <div class="row no-gutters align-items-center">
+                              <div class="col-3 text-center nopadding">
+                                <button id="quitarPedido" type="button"
+                                  class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                    class="fa fa-minus "></i></button>
+                              </div>
+                              <div class="col-6 text-center nopadding">
+                                <h4 id="pedido" class="h4-responsive z-depth-1 rounded-pill mt-2 ">100</h4>
+                              </div>
+                              <div class="col-3 text-center nopadding">
+                                <button id="aumentarPedido" type="button"
+                                  class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                    class="fa fa-plus"></i></button>
+                              </div>
+                            </div>
+                            <div class="row no-gutters text-center">
+                              <div class="col">
+                                <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                                    class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item no-gutters">
+                  <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-1">
+                      <a class="waves-effect waves-light" data-toggle="modal" data-target="#modalDetail">
+                        <img class="card-img-top p-3" src="https://mdbootstrap.com/img/Photos/Others/img (34).jpg"
+                          alt="Card image cap"></a>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col text-center">
+                            <h3 class="h3-responsive" style="font-family: Gotham-Light;">Cebollas</h3>
+                          </div>
+                        </div>
+
+                        <div class="row align-items-center ">
+
+                          <div class="col-6 col-md-6 col-lg-6 nopadding">
+
+                            <h4 id="precio" class="h4-responsive letra-gotham-black vino">$0.25</h4>
+
+                            <h6 id="precioAnterior" class="letra-gotham-light grey-text">antes $0.30</h6>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-6 nopadding">
+                            <div class="row no-gutters align-items-center">
+                              <div class="col-3 text-center nopadding">
+                                <button id="quitarPedido" type="button"
+                                  class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                    class="fa fa-minus "></i></button>
+                              </div>
+                              <div class="col-6 text-center nopadding">
+                                <h4 id="pedido" class="h4-responsive z-depth-1 rounded-pill mt-2 ">100</h4>
+                              </div>
+                              <div class="col-3 text-center nopadding">
+                                <button id="aumentarPedido" type="button"
+                                  class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                    class="fa fa-plus"></i></button>
+                              </div>
+                            </div>
+                            <div class="row no-gutters text-center">
+                              <div class="col">
+                                <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                                    class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item no-gutters">
+                  <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-1">
+                      <a class="waves-effect waves-light" data-toggle="modal" data-target="#modalDetail">
+                        <img class="card-img-top p-3" src="https://mdbootstrap.com/img/Photos/Others/img (38).jpg"
+                          alt="Card image cap"></a>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col text-center">
+                            <h3 class="h3-responsive" style="font-family: Gotham-Light;">Chile</h3>
+                          </div>
+                        </div>
+
+                        <div class="row align-items-center ">
+
+                          <div class="col-6 col-md-6 col-lg-6 nopadding">
+
+                            <h4 id="precio" class="h4-responsive letra-gotham-black vino">$0.25</h4>
+
+                            <h6 id="precioAnterior" class="letra-gotham-light grey-text">antes $0.30</h6>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-6 nopadding">
+                            <div class="row no-gutters align-items-center">
+                              <div class="col-3 text-center nopadding">
+                                <button id="quitarPedido" type="button"
+                                  class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                    class="fa fa-minus "></i></button>
+                              </div>
+                              <div class="col-6 text-center nopadding">
+                                <h4 id="pedido" class="h4-responsive z-depth-1 rounded-pill mt-2 ">100</h4>
+                              </div>
+                              <div class="col-3 text-center nopadding">
+                                <button id="aumentarPedido" type="button"
+                                  class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                    class="fa fa-plus"></i></button>
+                              </div>
+                            </div>
+                            <div class="row no-gutters text-center">
+                              <div class="col">
+                                <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                                    class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item no-gutters">
+                  <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-1">
+                      <a class="waves-effect waves-light" data-toggle="modal" data-target="#modalDetail">
+                        <img class="card-img-top p-3" src="https://mdbootstrap.com/img/Photos/Others/img (29).jpg"
+                          alt="Card image cap"></a>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col text-center">
+                            <h3 class="h3-responsive" style="font-family: Gotham-Light;">Lechuga</h3>
+                          </div>
+                        </div>
+
+                        <div class="row align-items-center ">
+
+                          <div class="col-6 col-md-6 col-lg-6 nopadding">
+
+                            <h4 id="precio" class="h4-responsive letra-gotham-black vino">$0.25</h4>
+
+                            <h6 id="precioAnterior" class="letra-gotham-light grey-text">antes $0.30</h6>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-6 nopadding">
+                            <div class="row no-gutters align-items-center">
+                              <div class="col-3 text-center nopadding">
+                                <button id="quitarPedido" type="button"
+                                  class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                    class="fa fa-minus "></i></button>
+                              </div>
+                              <div class="col-6 text-center nopadding">
+                                <h4 id="pedido" class="h4-responsive z-depth-1 rounded-pill mt-2 ">100</h4>
+                              </div>
+                              <div class="col-3 text-center nopadding">
+                                <button id="aumentarPedido" type="button"
+                                  class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                    class="fa fa-plus"></i></button>
+                              </div>
+                            </div>
+                            <div class="row no-gutters text-center">
+                              <div class="col">
+                                <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                                    class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item no-gutters">
+                  <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-1">
+                      <a class="waves-effect waves-light" data-toggle="modal" data-target="#modalDetail">
+                        <img class="card-img-top p-3" src="https://mdbootstrap.com/img/Photos/Others/img (30).jpg"
+                          alt="Card image cap"></a>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col text-center">
+                            <h3 class="h3-responsive" style="font-family: Gotham-Light;">Papas</h3>
+                          </div>
+                        </div>
+
+                        <div class="row align-items-center ">
+
+                          <div class="col-6 col-md-6 col-lg-6 nopadding">
+
+                            <h4 id="precio" class="h4-responsive letra-gotham-black vino">$0.25</h4>
+
+                            <h6 id="precioAnterior" class="letra-gotham-light grey-text">antes $0.30</h6>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-6 nopadding">
+                            <div class="row no-gutters align-items-center">
+                              <div class="col-3 text-center nopadding">
+                                <button id="quitarPedido" type="button"
+                                  class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                    class="fa fa-minus "></i></button>
+                              </div>
+                              <div class="col-6 text-center nopadding">
+                                <h4 id="pedido" class="h4-responsive z-depth-1 rounded-pill mt-2 ">100</h4>
+                              </div>
+                              <div class="col-3 text-center nopadding">
+                                <button id="aumentarPedido" type="button"
+                                  class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                    class="fa fa-plus"></i></button>
+                              </div>
+                            </div>
+                            <div class="row no-gutters text-center">
+                              <div class="col">
+                                <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                                    class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item no-gutters">
+                  <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card mb-1">
+                      <a class="waves-effect waves-light" data-toggle="modal" data-target="#modalDetail">
+                        <img class="card-img-top p-3" src="https://mdbootstrap.com/img/Photos/Others/img (27).jpg"
+                          alt="Card image cap"></a>
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col text-center">
+                            <h3 class="h3-responsive" style="font-family: Gotham-Light;">Jalapeño</h3>
+                          </div>
+                        </div>
+
+                        <div class="row align-items-center ">
+
+                          <div class="col-6 col-md-6 col-lg-6 nopadding">
+
+                            <h4 id="precio" class="h4-responsive letra-gotham-black vino">$0.25</h4>
+
+                            <h6 id="precioAnterior" class="letra-gotham-light grey-text">antes $0.30</h6>
+                          </div>
+                          <div class="col-6 col-md-6 col-lg-6 nopadding">
+                            <div class="row no-gutters align-items-center">
+                              <div class="col-3 text-center nopadding">
+                                <button id="quitarPedido" type="button"
+                                  class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                    class="fa fa-minus "></i></button>
+                              </div>
+                              <div class="col-6 text-center nopadding">
+                                <h4 id="pedido" class="h4-responsive z-depth-1 rounded-pill mt-2 ">100</h4>
+                              </div>
+                              <div class="col-3 text-center nopadding">
+                                <button id="aumentarPedido" type="button"
+                                  class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                    class="fa fa-plus"></i></button>
+                              </div>
+                            </div>
+                            <div class="row no-gutters text-center">
+                              <div class="col">
+                                <button type="button" class="btn btn-sm btn-warning btn-rounded bg-naranja"><i
+                                    class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Fin Productos Destacados -->
+        </section>
+      </div>
+    </section>
+    <!--Section: Content-->
 
   <!-- Footer -->
   <footer class="page-footer font-small blue-grey lighten-5">
 
     <div class="bg-vino">
-      <div class="container">
+        <div class="container">
 
-        <!-- Grid row-->
-        <div class="row py-4 d-flex align-items-center">
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
 
-          <!-- Grid column -->
-          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-            <h6 class="mb-0 text-white-light">© 2020 Copyright Justo Market</h6>
-          </div>
-          <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0 letra-gotham-bold">© 2020 Copyright Justo Market</h6>
+                </div>
+                <!-- Grid column -->
 
-          <!-- Grid column -->
-          <div class="col-md-6 col-lg-7 text-center text-md-right">
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-7 text-center text-md-right">
 
-            <!-- Whatsapp -->
-            <a class="fb-ic">
-              <i class="fab fa-whatsapp white-text mr-4"> </i>
-            </a>
+                    <!-- Whatsapp -->
+                    <a class="fb-ic border rounded-circle p-1 mr-4">
+                        <i class="fab fa-whatsapp white-text ml-1"> </i>
+                    </a>
 
-            <!-- Facebook -->
-            <a class="fb-ic">
-              <i class="fab fa-facebook-f white-text mr-4"> </i>
-            </a>
+                    <!-- Facebook -->
+                    <a class="fb-ic border rounded-circle p-1 mr-4">
+                        <i class="fab fa-facebook-f white-text ml-1"> </i>
+                    </a>
 
-            <!--Instagram-->
-            <a class="ins-ic">
-              <i class="fab fa-instagram white-text"> </i>
-            </a>
+                    <!--Instagram-->
+                    <a class="ins-ic border rounded-circle p-1 mr-4">
+                        <i class="fab fa-instagram white-text m-1"> </i>
+                    </a>
 
-          </div>
-          <!-- Grid column -->
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row-->
 
         </div>
-        <!-- Grid row-->
-
-      </div>
     </div>
-  </footer>
-  <!-- Footer -->
+</footer>
+<!-- Footer -->
 
+  </div>
   <!-- SCRIPTS -->
   <!-- JQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>

@@ -16,12 +16,9 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<header>
-
-</header>
-
 <body>
     <div class="container">
+
         <!-- Barra de Navegacion -->
         <section>
             <!--Navbar -->
@@ -77,12 +74,14 @@
                                         <!-- Nav tabs -->
                                         <ul class="nav nav-tabs md-tabs tabs-2 bg-vino" role="tablist">
                                             <li class="nav-item">
-                                                <a class="nav-link active letra-gotham-bold" data-toggle="tab" href="#panel7"
-                                                    role="tab"><i class="fas fa-user mr-1"></i>
+                                                <a class="nav-link letra-gotham-bold" data-toggle="tab"
+                                                    href="#panelIniciarSesion" role="tab"><i
+                                                        class="fas fa-user mr-1"></i>
                                                     Iniciar Sesion</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link letra-gotham-bold" data-toggle="tab" href="#panel8" role="tab"><i
+                                                <a class="nav-link letra-gotham-bold" data-toggle="tab"
+                                                    href="#panelRegistro" role="tab"><i
                                                         class="fas fa-user-plus mr-1"></i>
                                                     Registro</a>
                                             </li>
@@ -90,8 +89,9 @@
 
                                         <!-- Tab panels -->
                                         <div class="tab-content">
-                                            <!--Panel 7-->
-                                            <div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+                                            <!--Panel Inicar Sesion-->
+                                            <div class="tab-pane fade in show active" id="panelIniciarSesion"
+                                                role="tabpanel">
 
                                                 <!--Body-->
                                                 <div class="modal-body mb-1">
@@ -100,7 +100,7 @@
                                                         <input type="email" id="modalLRInput10"
                                                             class="form-control form-control-sm validate">
                                                         <label data-error="wrong" data-success="right"
-                                                            for="modalLRInput10">Your email</label>
+                                                            for="modalLRInput10">Email</label>
                                                     </div>
 
                                                     <div class="md-form form-sm mb-4">
@@ -108,18 +108,19 @@
                                                         <input type="password" id="modalLRInput11"
                                                             class="form-control form-control-sm validate">
                                                         <label data-error="wrong" data-success="right"
-                                                            for="modalLRInput11">Your password</label>
+                                                            for="modalLRInput11">Contraseña</label>
                                                     </div>
                                                     <div class="text-center mt-2">
-                                                        <button class="btn btn-info bg-vino letra-gotham-bold">Log in <i
-                                                                class="fas fa-sign-in ml-1"></i></button>
+                                                        <button class="btn btn-info bg-vino letra-gotham-bold">Acceder
+                                                            <i class="fas fa-sign-in ml-1"></i></button>
                                                     </div>
                                                 </div>
                                                 <!--Footer-->
                                                 <div class="modal-footer">
                                                     <div class="options text-center text-md-right mt-1">
-                                                        <p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
-                                                        <p>Forgot <a href="#" class="blue-text">Password?</a></p>
+                                                        <p>¿No tienes cuenta? <a data-toggle="tab" href="#panelRegistro"
+                                                                role="tab" class="vino">Registrate</a></p>
+                                                        <p><a href="#" class="vino">Olvide la Contraseña</a></p>
                                                     </div>
                                                     <button type="button"
                                                         class="btn outline-vino waves-effect ml-auto letra-gotham-bold"
@@ -127,10 +128,10 @@
                                                 </div>
 
                                             </div>
-                                            <!--/.Panel 7-->
+                                            <!--/.Panel Iniciar Sesion-->
 
-                                            <!--Panel 8-->
-                                            <div class="tab-pane fade" id="panel8" role="tabpanel">
+                                            <!--Panel Registro-->
+                                            <div class="tab-pane fade" id="panelRegistro" role="tabpanel">
 
                                                 <!--Body-->
                                                 <div class="modal-body">
@@ -139,7 +140,7 @@
                                                         <input type="email" id="modalLRInput12"
                                                             class="form-control form-control-sm validate">
                                                         <label data-error="wrong" data-success="right"
-                                                            for="modalLRInput12">Your email</label>
+                                                            for="modalLRInput12">Email</label>
                                                     </div>
 
                                                     <div class="md-form form-sm mb-5">
@@ -147,7 +148,7 @@
                                                         <input type="password" id="modalLRInput13"
                                                             class="form-control form-control-sm validate">
                                                         <label data-error="wrong" data-success="right"
-                                                            for="modalLRInput13">Your password</label>
+                                                            for="modalLRInput13">Contraseña</label>
                                                     </div>
 
                                                     <div class="md-form form-sm mb-4">
@@ -155,11 +156,11 @@
                                                         <input type="password" id="modalLRInput14"
                                                             class="form-control form-control-sm validate">
                                                         <label data-error="wrong" data-success="right"
-                                                            for="modalLRInput14">Repeat password</label>
+                                                            for="modalLRInput14">Repetir Contraseña</label>
                                                     </div>
 
                                                     <div class="text-center form-sm mt-2 letra-gotham-bold">
-                                                        <button class="btn btn-info bg-vino">Sign up <i
+                                                        <button class="btn btn-info bg-vino">Registrar <i
                                                                 class="fas fa-sign-in ml-1"></i></button>
                                                     </div>
 
@@ -167,15 +168,16 @@
                                                 <!--Footer-->
                                                 <div class="modal-footer">
                                                     <div class="options text-right">
-                                                        <p class="pt-1">Already have an account? <a href="#"
-                                                                class="blue-text">Log In</a></p>
+                                                        <p class="pt-1">¿Ya tienes cuenta? <a data-toggle="tab"
+                                                                href="#panelIniciarSesion" role="tab"
+                                                                class="vino">Inicia Sesion</a></p>
                                                     </div>
                                                     <button type="button"
                                                         class="btn outline-vino waves-effect ml-auto vino letra-gotham-bold"
-                                                        data-dismiss="modal">Close</button>
+                                                        data-dismiss="modal">Cerrar</button>
                                                 </div>
                                             </div>
-                                            <!--/.Panel 8-->
+                                            <!--/.Panel Registro-->
                                         </div>
 
                                     </div>
@@ -183,9 +185,9 @@
                                 <!--/.Content-->
                             </div>
                         </div>
-                        <!--Modal: Login / Register Form-->
+                        <!--fin Modal: Login / Register Form-->
 
-                      
+
                         <!-- Modal: modalCart -->
                         <div class="container">
                             <div class="modal fade rounded" id="modalCart" tabindex="-1" role="dialog"
@@ -206,34 +208,28 @@
 
                                                 <tbody>
                                                     <tr>
-
-                                                        <td class="letra-gotham-light grey-text text-right">Product 1
+                                                        <td class="letra-gotham-light grey-text">Product 1
                                                         </td>
                                                         <td class="letra-gotham-bold grey-text">100$</td>
-
                                                     </tr>
                                                     <tr>
-                                                        <td class="letra-gotham-light grey-text text-right">Product 2
+                                                        <td class="letra-gotham-light grey-text">Product 2
                                                         </td>
                                                         <td class="letra-gotham-bold grey-text">100$</td>
-
                                                     </tr>
                                                     <tr>
-                                                        <td class="letra-gotham-light grey-text text-right">Product 3
+                                                        <td class="letra-gotham-light grey-text">Product 3
                                                         </td>
                                                         <td class="letra-gotham-bold grey-text">100$</td>
-
                                                     </tr>
                                                     <tr>
-                                                        <td class="letra-gotham-light grey-text text-right">Product 4
+                                                        <td class="letra-gotham-light grey-text">Product 4
                                                         </td>
                                                         <td class="letra-gotham-bold grey-text">100$</td>
-
                                                     </tr>
                                                     <tr class="total">
-
                                                         <td>
-                                                            <h6 class=" mt-2 letra-gotham-bold grey-text text-right">
+                                                            <h6 class=" mt-2 letra-gotham-bold grey-text">
                                                                 <strong>SubTotal</strong>
                                                                 <br>
                                                                 <br>
@@ -242,50 +238,45 @@
                                                         </td>
                                                         <td>
                                                             <h6 class="mt-2 letra-gotham-bold grey-text">
-                                                                <strong>$20</strong>
+                                                                <strong id="subtotal">$20</strong>
                                                                 <br>
                                                                 <br>
-                                                                <strong>$6.0</strong>
+                                                                <strong id="delivery">$6.0</strong>
                                                             </h6>
                                                         </td>
-
-
-
                                                     </tr>
-
 
                                                     <tr class="total">
                                                     <tr>
                                                         <td>
-                                                            <h4 class="mt-1 letra-gotham-bold grey-text text-right">
+                                                            <h4 class="mt-1 letra-gotham-bold grey-text">
                                                                 <strong>Total</strong>
                                                             </h4>
                                                         </td>
                                                         <td>
-                                                            <h4 class="mt-1 letra-gotham-bold grey-text">
+                                                            <h4 class="mt-1 letra-gotham-bold grey-text" id="Total">
                                                                 <strong>$60</strong>
                                                             </h4>
                                                         </td>
-
                                                     </tr>
                                                     </tr>
-
                                                 </tbody>
                                             </table>
 
                                         </div>
                                         <!--Footer Modal-->
                                         <div class="modal-footer d-block text-center">
-                                            <a class="btn btn-primary bg-naranja letra-gotham-black">Ver Carrito</a>
+                                            <button class="btn btn-primary bg-naranja letra-gotham-black">Ver
+                                                Carrito</button>
 
-                                            <a type="button" class="btn btn-outline-warning letra-gotham-black"
-                                                data-dismiss="modal">Procesar Pago</a>
+                                            <button type="button" class="btn btn-outline-warning letra-gotham-black"
+                                                data-dismiss="modal">Procesar Pago</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Modal: modalCart -->
+                        <!-- fin Modal: modalCart -->
                     </li>
                 </ul>
             </nav>
@@ -293,13 +284,13 @@
             <!--/.Navbar -->
         </section>
         <!-- Fin Barra de Navegacion -->
+
         <!-- Barra de Logo -->
         <section>
             <nav class="navbar navbar-expand-lg navbar-light bg-white m-1">
 
-
                 <a class="navbar-brand" href="index.html">
-                    <img src="Logo/Logo_Mesa de trabajo 1.png" class="img-fluid" alt="Responsive image">
+                    <img src="Logo/Logo_Mesa de trabajo 2.png" class="img-fluid" alt="Responsive image">
                 </a>
 
 
@@ -317,11 +308,47 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link letra-gotham-black outline-vino z-depth-1 rounded-pill pl-2 pt-3 m-2 text-center"
-                                href="categoria.html">
+                            <a class="nav-link letra-gotham-black outline-vino z-depth-1
+                             rounded-pill pl-2 pt-3 m-2 text-center" data-toggle="popover-click" data-placement="auto">
                                 <h4>Categorias</h4>
                             </a>
+                            <div id="popover_content_list" style="display: none">
+
+                                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                                    Bebidas
+                                </a> <br>
+                                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                                    Carnes
+                                </a> <br>
+                                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                                    Frutas
+                                </a> <br>
+                                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                                    Abarrotes
+                                </a> <br>
+                                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                                    Mariscos
+                                </a> <br>
+                                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                                    Vegetales
+                                </a> <br>
+                                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                                    Granos
+                                </a> <br>
+                                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                                    Lacteos
+                                </a> <br>
+                                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                                    Limpieza
+                                </a> <br>
+                                <a href="categoria.html" class="letra-gotham-bold grey-text outline-naranja">
+                                    Snacks
+                                </a> <br>
+
+
+                            </div>
                         </li>
+
                         <li class="nav-item ">
                             <a class="nav-link letra-gotham-black outline-vino z-depth-1 rounded-pill pl-2 pt-3 m-2 text-center"
                                 href="categoria.html">
@@ -341,6 +368,7 @@
 
         </section>
         <!-- Fin Barra Logo -->
+
         <!-- Carousel -->
         <section>
             <!--Carousel Wrapper-->
@@ -357,20 +385,17 @@
                     <div class="carousel-inner" role="listbox">
                         <!--First slide-->
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(141).jpg"
-                                alt="First slide">
+                            <img class="d-block w-100" src="imagenes/carusel.jpg" alt="First slide">
                         </div>
                         <!--/First slide-->
                         <!--Second slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(136).jpg"
-                                alt="Second slide">
+                            <img class="d-block w-100" src="imagenes/carusel.jpg" alt="Second slide">
                         </div>
                         <!--/Second slide-->
                         <!--Third slide-->
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(137).jpg"
-                                alt="Third slide">
+                            <img class="d-block w-100" src="imagenes/carusel.jpg" alt="Third slide">
                         </div>
                         <!--/Third slide-->
                     </div>
@@ -391,6 +416,7 @@
 
         </section>
         <!-- Fin carousel -->
+
         <!-- Barra Buscar -->
         <section>
 
@@ -403,9 +429,9 @@
                             aria-label="Search">
                         <div class="input-group-append">
                             <span class="input-group-text bg-naranja buscar-right" id="basic-text1">
-                                <a class=" vino">
-                                    <i class="fas fa-search text-grey" aria-hidden="true"></i>
-                                </a>
+                                <button id="buscar" type="button" class="vino bg-naranja nopadding border-0">
+                                    <i class="fas fa-search " aria-hidden="true"></i>
+                                </button>
                             </span>
                         </div>
                     </div>
@@ -415,6 +441,7 @@
 
         </section>
         <!-- Fin Barra Buscar -->
+
         <!-- Categorias -->
         <section>
 
@@ -560,6 +587,7 @@
 
         </section>
         <!-- Fin Categorias -->
+
         <!-- Publicidad -->
         <section>
 
@@ -582,9 +610,11 @@
 
         </section>
         <!-- Fin Publicidad -->
+
         <!-- Productos Destacados -->
         <section>
 
+            <!-- Baner Texto -->
             <nav class="navbar navbar-default bg-white z-depth-0">
                 <div class="container ">
                     <a class="navbar-brand ">
@@ -592,8 +622,9 @@
                     </a>
                 </div>
             </nav>
-            <!--Carousel Wrapper-->
+            <!-- fin Baner Texto -->
 
+            <!--Carousel Productos Destacados-->
             <div id="carousel-example-multi" class="carousel  carousel-multi-item v-2" data-ride="carousel">
 
                 <!--Controls-->
@@ -638,24 +669,26 @@
 
                                         <div class="col-6 col-md-6 col-lg-6 nopadding">
 
-                                            <h4 class="h4-responsive letra-gotham-black vino">$0.25</h4>
+                                            <h4 id="precio" class="h4-responsive letra-gotham-black vino">$0.25</h4>
 
-                                            <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                                            <h6 id="precioAnterior" class="letra-gotham-light grey-text">antes $0.30
+                                            </h6>
                                         </div>
                                         <div class="col-6 col-md-6 col-lg-6 nopadding">
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-3 text-center nopadding">
-                                                    <a type="button"
-                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
-                                                            class="fa fa-minus "></i></a>
+                                                    <button id="quitarPedido" type="button"
+                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                            class="fa fa-minus "></i></button>
                                                 </div>
                                                 <div class="col-6 text-center nopadding">
-                                                    <h4 class="h4-responsive z-depth-1 rounded-pill mt-2 ">100</h4>
+                                                    <h4 id="pedido" class="h4-responsive z-depth-1 rounded-pill mt-2 ">
+                                                        100</h4>
                                                 </div>
                                                 <div class="col-3 text-center nopadding">
-                                                    <a type="button"
-                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
-                                                            class="fa fa-plus"></i></a>
+                                                    <button id="aumentarPedido" type="button"
+                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                            class="fa fa-plus"></i></button>
                                                 </div>
                                             </div>
                                             <div class="row no-gutters text-center">
@@ -690,24 +723,26 @@
 
                                         <div class="col-6 col-md-6 col-lg-6 nopadding">
 
-                                            <h4 class="h4-responsive letra-gotham-black vino">$0.25</h4>
+                                            <h4 id="precio" class="h4-responsive letra-gotham-black vino">$0.25</h4>
 
-                                            <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                                            <h6 id="precioAnterior" class="letra-gotham-light grey-text">antes $0.30
+                                            </h6>
                                         </div>
                                         <div class="col-6 col-md-6 col-lg-6 nopadding">
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-3 text-center nopadding">
-                                                    <a type="button"
-                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
-                                                            class="fa fa-minus "></i></a>
+                                                    <button id="quitarPedido" type="button"
+                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                            class="fa fa-minus "></i></button>
                                                 </div>
                                                 <div class="col-6 text-center nopadding">
-                                                    <h4 class="h4-responsive z-depth-1 rounded-pill mt-2 ">100</h4>
+                                                    <h4 id="pedido" class="h4-responsive z-depth-1 rounded-pill mt-2 ">
+                                                        100</h4>
                                                 </div>
                                                 <div class="col-3 text-center nopadding">
-                                                    <a type="button"
-                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
-                                                            class="fa fa-plus"></i></a>
+                                                    <button id="aumentarPedido" type="button"
+                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                            class="fa fa-plus"></i></button>
                                                 </div>
                                             </div>
                                             <div class="row no-gutters text-center">
@@ -742,24 +777,26 @@
 
                                         <div class="col-6 col-md-6 col-lg-6 nopadding">
 
-                                            <h4 class="h4-responsive letra-gotham-black vino">$0.25</h4>
+                                            <h4 id="precio" class="h4-responsive letra-gotham-black vino">$0.25</h4>
 
-                                            <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                                            <h6 id="precioAnterior" class="letra-gotham-light grey-text">antes $0.30
+                                            </h6>
                                         </div>
                                         <div class="col-6 col-md-6 col-lg-6 nopadding">
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-3 text-center nopadding">
-                                                    <a type="button"
-                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
-                                                            class="fa fa-minus "></i></a>
+                                                    <button id="quitarPedido" type="button"
+                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                            class="fa fa-minus "></i></button>
                                                 </div>
                                                 <div class="col-6 text-center nopadding">
-                                                    <h4 class="h4-responsive z-depth-1 rounded-pill mt-2 ">100</h4>
+                                                    <h4 id="pedido" class="h4-responsive z-depth-1 rounded-pill mt-2 ">
+                                                        100</h4>
                                                 </div>
                                                 <div class="col-3 text-center nopadding">
-                                                    <a type="button"
-                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
-                                                            class="fa fa-plus"></i></a>
+                                                    <button id="aumentarPedido" type="button"
+                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                            class="fa fa-plus"></i></button>
                                                 </div>
                                             </div>
                                             <div class="row no-gutters text-center">
@@ -794,24 +831,26 @@
 
                                         <div class="col-6 col-md-6 col-lg-6 nopadding">
 
-                                            <h4 class="h4-responsive letra-gotham-black vino">$0.25</h4>
+                                            <h4 id="precio" class="h4-responsive letra-gotham-black vino">$0.25</h4>
 
-                                            <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                                            <h6 id="precioAnterior" class="letra-gotham-light grey-text">antes $0.30
+                                            </h6>
                                         </div>
                                         <div class="col-6 col-md-6 col-lg-6 nopadding">
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-3 text-center nopadding">
-                                                    <a type="button"
-                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
-                                                            class="fa fa-minus "></i></a>
+                                                    <button id="quitarPedido" type="button"
+                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                            class="fa fa-minus "></i></button>
                                                 </div>
                                                 <div class="col-6 text-center nopadding">
-                                                    <h4 class="h4-responsive z-depth-1 rounded-pill mt-2 ">100</h4>
+                                                    <h4 id="pedido" class="h4-responsive z-depth-1 rounded-pill mt-2 ">
+                                                        100</h4>
                                                 </div>
                                                 <div class="col-3 text-center nopadding">
-                                                    <a type="button"
-                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
-                                                            class="fa fa-plus"></i></a>
+                                                    <button id="aumentarPedido" type="button"
+                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                            class="fa fa-plus"></i></button>
                                                 </div>
                                             </div>
                                             <div class="row no-gutters text-center">
@@ -846,24 +885,26 @@
 
                                         <div class="col-6 col-md-6 col-lg-6 nopadding">
 
-                                            <h4 class="h4-responsive letra-gotham-black vino">$0.25</h4>
+                                            <h4 id="precio" class="h4-responsive letra-gotham-black vino">$0.25</h4>
 
-                                            <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                                            <h6 id="precioAnterior" class="letra-gotham-light grey-text">antes $0.30
+                                            </h6>
                                         </div>
                                         <div class="col-6 col-md-6 col-lg-6 nopadding">
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-3 text-center nopadding">
-                                                    <a type="button"
-                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
-                                                            class="fa fa-minus "></i></a>
+                                                    <button id="quitarPedido" type="button"
+                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                            class="fa fa-minus "></i></button>
                                                 </div>
                                                 <div class="col-6 text-center nopadding">
-                                                    <h4 class="h4-responsive z-depth-1 rounded-pill mt-2 ">100</h4>
+                                                    <h4 id="pedido" class="h4-responsive z-depth-1 rounded-pill mt-2 ">
+                                                        100</h4>
                                                 </div>
                                                 <div class="col-3 text-center nopadding">
-                                                    <a type="button"
-                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
-                                                            class="fa fa-plus"></i></a>
+                                                    <button id="aumentarPedido" type="button"
+                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                            class="fa fa-plus"></i></button>
                                                 </div>
                                             </div>
                                             <div class="row no-gutters text-center">
@@ -898,24 +939,26 @@
 
                                         <div class="col-6 col-md-6 col-lg-6 nopadding">
 
-                                            <h4 class="h4-responsive letra-gotham-black vino">$0.25</h4>
+                                            <h4 id="precio" class="h4-responsive letra-gotham-black vino">$0.25</h4>
 
-                                            <h6 class="letra-gotham-light grey-text">antes $0.30</h6>
+                                            <h6 id="precioAnterior" class="letra-gotham-light grey-text">antes $0.30
+                                            </h6>
                                         </div>
                                         <div class="col-6 col-md-6 col-lg-6 nopadding">
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-3 text-center nopadding">
-                                                    <a type="button"
-                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
-                                                            class="fa fa-minus "></i></a>
+                                                    <button id="quitarPedido" type="button"
+                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                            class="fa fa-minus "></i></button>
                                                 </div>
                                                 <div class="col-6 text-center nopadding">
-                                                    <h4 class="h4-responsive z-depth-1 rounded-pill mt-2 ">100</h4>
+                                                    <h4 id="pedido" class="h4-responsive z-depth-1 rounded-pill mt-2 ">
+                                                        100</h4>
                                                 </div>
                                                 <div class="col-3 text-center nopadding">
-                                                    <a type="button"
-                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
-                                                            class="fa fa-plus"></i></a>
+                                                    <button id="aumentarPedido" type="button"
+                                                        class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                            class="fa fa-plus"></i></button>
                                                 </div>
                                             </div>
                                             <div class="row no-gutters text-center">
@@ -934,16 +977,21 @@
                     </div>
                 </div>
             </div>
-
+            <!--Fin Carousel Producto destacados-->
 
 
             <!-- Modal: modalDetalleProducto -->
             <div class="modal fade" id="modalDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <!--Header-->
-
+                        <div class="modal-header">
+                            
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
                         <!--Body-->
                         <div class="modal-body">
                             <div class="container my-5 py-5 z-depth-1">
@@ -981,13 +1029,15 @@
                                                 <!--Thumbnails-->
                                                 <a class="carousel-control-prev" href="#carousel-thumb1" role="button"
                                                     data-slide="prev">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="carousel-control-prev-icon bg-dark"
+                                                        aria-hidden="true"></span>
                                                     <span class="sr-only">Previous</span>
                                                 </a>
                                                 <a class="carousel-control-next" href="#carousel-thumb1" role="button"
                                                     data-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span class="sr-only">Next</span>
+                                                    <span class="carousel-control-next-icon bg-dark"
+                                                        aria-hidden="true"></span>
+                                                    <span class="sr-only ">Next</span>
                                                 </a>
                                                 <!--/.Thumbnails-->
 
@@ -998,21 +1048,21 @@
                                                 <div class="col-md-12">
                                                     <div id="mdb-lightbox-ui"></div>
                                                     <div class="mdb-lightbox no-margin">
-                                                        <figure class="col-md-4">
+                                                        <figure class="col-4">
                                                             <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg"
                                                                 data-size="1600x1067">
                                                                 <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/1.jpg"
                                                                     class="img-fluid">
                                                             </a>
                                                         </figure>
-                                                        <figure class="col-md-4">
+                                                        <figure class="col-4">
                                                             <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/2.jpg"
                                                                 data-size="1600x1067">
                                                                 <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/2.jpg"
                                                                     class="img-fluid">
                                                             </a>
                                                         </figure>
-                                                        <figure class="col-md-4">
+                                                        <figure class="col-4">
                                                             <a href="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/20.jpg"
                                                                 data-size="1600x1067">
                                                                 <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/20.jpg"
@@ -1028,10 +1078,10 @@
                                         <div class="col-lg-5 text-center text-md-left">
 
                                             <h2 class="h2-responsive text-center text-md-left product-name 
-                                        font-weight-bold grey-text mb-1 ml-xl-0 ml-4 letra-gotham-bold">
+                                              font-weight-bold grey-text mb-1 ml-xl-0 ml-4 letra-gotham-bold">
                                                 Tomates</h2>
                                             <h3 class="h3-responsive text-center text-md-left mb-5 ml-xl-0 ml-4 
-                                    letra-gotham-light">
+                                          letra-gotham-light">
                                                 <span class="grey-text">Libra</span>
                                             </h3>
 
@@ -1047,8 +1097,10 @@
                                                 <br>
                                                 <br>
                                                 <p class="ml-xl-0 ml-4">
-                                                <h2 class="letra-gotham-black vino">$0.25 </h2>
-                                                <h5 class="letra-gotham-light">antes $0.30</h5>
+                                                <h2 class="h2-responsive letra-gotham-black vino ml-xl-0 ml-4">$0.25
+                                                </h2>
+                                                <h5 class="h5-responsive letra-gotham-light ml-xl-0 ml-4">antes $0.30
+                                                </h5>
                                                 </p>
 
                                                 <br>
@@ -1057,16 +1109,17 @@
                                                 <div class="row no-gutters align-items-center">
                                                     <div class="col-4 text-center">
                                                         <a type="button"
-                                                            class="btn-rounded btn-sm btn-comm bg-naranja"><i
+                                                            class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
                                                                 class="fa fa-minus"></i></a>
                                                     </div>
                                                     <div class="col-4 text-center">
-                                                        <h3 class="border border-grey btn-rounded letra-gotham-light">1
-                                                        </h3>
+                                                        <h3
+                                                            class="border border-grey btn-rounded letra-gotham-light mt-2 ">
+                                                            1</h3>
                                                     </div>
                                                     <div class="col-4 text-center">
                                                         <a type="button"
-                                                            class="btn-rounded btn-sm btn-comm bg-naranja"><i
+                                                            class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1"><i
                                                                 class="fa fa-plus"></i></a>
                                                     </div>
                                                 </div>
@@ -1086,38 +1139,45 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Carousel Productos Sugeridos-->
-                                    <nav class="navbar navbar-default bg-white z-depth-0">
-                                        <div class="container ">
+                                    <!-- Productos Destacados -->
+                                    <section>
 
-                                            <h3 class="font-weight-bold vino">Productos Sugeridos</h3>
+                                        <nav class="navbar navbar-default bg-white z-depth-0">
+                                            <div class="container ">
+                                                <a class="navbar-brand ">
+                                                    <h2 class="h2-responsive font-weight-bold vino">Productos Sugeridos
+                                                    </h2>
+                                                </a>
+                                            </div>
+                                        </nav>
+                                        <!--Carousel Wrapper-->
 
-                                        </div>
-                                    </nav>
-                                    <!--Carousel Wrapper-->
-                                    <div class="container">
-                                        <div id="carousel-example-multi2" class="carousel slide carousel-multi-item v-2"
+                                        <div id="carousel-example-multi" class="carousel  carousel-multi-item v-2"
                                             data-ride="carousel">
 
                                             <!--Controls-->
                                             <div class="controls-top">
-                                                <a class="btn-floating bg-vino" href="#carousel-example-multi2"
+                                                <a class="btn-floating bg-vino" href="#carousel-example-multi"
                                                     data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-                                                <a class="btn-floating bg-vino" href="#carousel-example-multi2"
+                                                <a class="btn-floating bg-vino" href="#carousel-example-multi"
                                                     data-slide="next"><i class="fas fa-chevron-right"></i></a>
                                             </div>
                                             <!--/.Controls-->
 
                                             <!-- Indicators -->
                                             <ol class="carousel-indicators">
-                                                <li data-target="#carousel-example-multi2" data-slide-to="0"
+                                                <li data-target="#carousel-example-multi" data-slide-to="0"
                                                     class="active bg-vino"></li>
-                                                <li data-target="#carousel-example-multi2" data-slide-to="1"
-                                                    class="bg-vino">
-                                                </li>
-                                                <li data-target="#carousel-example-multi2" data-slide-to="2"
-                                                    class="bg-vino">
-                                                </li>
+                                                <li data-target="#carousel-example-multi" data-slide-to="1"
+                                                    class="bg-vino"></li>
+                                                <li data-target="#carousel-example-multi" data-slide-to="2"
+                                                    class="bg-vino"></li>
+                                                <li data-target="#carousel-example-multi" data-slide-to="3"
+                                                    class="bg-vino"></li>
+                                                <li data-target="#carousel-example-multi" data-slide-to="4"
+                                                    class="bg-vino"></li>
+                                                <li data-target="#carousel-example-multi" data-slide-to="5"
+                                                    class="bg-vino"></li>
 
 
                                             </ol>
@@ -1125,47 +1185,52 @@
 
                                             <div class="carousel-inner v-2" role="listbox">
 
-                                                <div class="carousel-item active">
-                                                    <div class="col-12 col-md-4">
+                                                <div class="carousel-item active no-gutters">
+                                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                                                         <div class="card mb-1">
-                                                            <img class="card-img-top"
-                                                                src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
-                                                                alt="Card image cap">
+                                                            <a class="waves-effect waves-light" data-toggle="modal"
+                                                                data-target="#modalDetail">
+                                                                <img class="card-img-top p-3"
+                                                                    src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
+                                                                    alt="Card image cap"></a>
                                                             <div class="card-body">
                                                                 <div class="row">
                                                                     <div class="col text-center">
                                                                         <h3 class="h3-responsive"
-                                                                            style="font-family: Gotham-Light;">Cebollas
+                                                                            style="font-family: Gotham-Light;">Tomates
                                                                         </h3>
                                                                     </div>
                                                                 </div>
 
-                                                                <div
-                                                                    class="row align-items-center d-flex d-inline-block">
+                                                                <div class="row align-items-center ">
 
-                                                                    <div class="col-6 align-baseline">
-                                                                        <h2 class="letra-gotham-black vino">$0.25</h2>
-                                                                        <h5 class="letra-gotham-light grey-text">antes
-                                                                            $0.30
-                                                                        </h5>
+                                                                    <div class="col-6 col-md-6 col-lg-6 nopadding">
+
+                                                                        <h4 id="precio"
+                                                                            class="h4-responsive letra-gotham-black vino">
+                                                                            $0.25</h4>
+
+                                                                        <h6 id="precioAnterior"
+                                                                            class="letra-gotham-light grey-text">antes
+                                                                            $0.30</h6>
                                                                     </div>
-                                                                    <div class="col-6">
+                                                                    <div class="col-6 col-md-6 col-lg-6 nopadding">
                                                                         <div class="row no-gutters align-items-center">
-                                                                            <div class="col-4 text-center">
-                                                                                <a type="button"
-                                                                                    class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                                                                        class="fa fa-minus"></i></a>
+                                                                            <div class="col-3 text-center nopadding">
+                                                                                <button id="quitarPedido" type="button"
+                                                                                    class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                                                        class="fa fa-minus "></i></button>
                                                                             </div>
-                                                                            <div class="col-4 text-center">
-                                                                                <h3
-                                                                                    class="border border-grey btn-rounded ">
-                                                                                    1
-                                                                                </h3>
+                                                                            <div class="col-6 text-center nopadding">
+                                                                                <h4 id="pedido"
+                                                                                    class="h4-responsive z-depth-1 rounded-pill mt-2 ">
+                                                                                    100</h4>
                                                                             </div>
-                                                                            <div class="col-4 text-center">
-                                                                                <a type="button"
-                                                                                    class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                                                                        class="fa fa-plus"></i></a>
+                                                                            <div class="col-3 text-center nopadding">
+                                                                                <button id="aumentarPedido"
+                                                                                    type="button"
+                                                                                    class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                                                        class="fa fa-plus"></i></button>
                                                                             </div>
                                                                         </div>
                                                                         <div class="row no-gutters text-center">
@@ -1183,12 +1248,14 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="carousel-item">
-                                                    <div class="col-12 col-md-4">
+                                                <div class="carousel-item no-gutters">
+                                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                                                         <div class="card mb-1">
-                                                            <img class="card-img-top"
-                                                                src="https://mdbootstrap.com/img/Photos/Others/img (34).jpg"
-                                                                alt="Card image cap">
+                                                            <a class="waves-effect waves-light" data-toggle="modal"
+                                                                data-target="#modalDetail">
+                                                                <img class="card-img-top p-3"
+                                                                    src="https://mdbootstrap.com/img/Photos/Others/img (34).jpg"
+                                                                    alt="Card image cap"></a>
                                                             <div class="card-body">
                                                                 <div class="row">
                                                                     <div class="col text-center">
@@ -1198,32 +1265,35 @@
                                                                     </div>
                                                                 </div>
 
-                                                                <div
-                                                                    class="row align-items-center d-flex d-inline-block">
+                                                                <div class="row align-items-center ">
 
-                                                                    <div class="col-6 align-baseline">
-                                                                        <h2 class="letra-gotham-black vino">$0.25</h2>
-                                                                        <h5 class="letra-gotham-light grey-text">antes
-                                                                            $0.30
-                                                                        </h5>
+                                                                    <div class="col-6 col-md-6 col-lg-6 nopadding">
+
+                                                                        <h4 id="precio"
+                                                                            class="h4-responsive letra-gotham-black vino">
+                                                                            $0.25</h4>
+
+                                                                        <h6 id="precioAnterior"
+                                                                            class="letra-gotham-light grey-text">antes
+                                                                            $0.30</h6>
                                                                     </div>
-                                                                    <div class="col-6">
+                                                                    <div class="col-6 col-md-6 col-lg-6 nopadding">
                                                                         <div class="row no-gutters align-items-center">
-                                                                            <div class="col-4 text-center">
-                                                                                <a type="button"
-                                                                                    class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                                                                        class="fa fa-minus"></i></a>
+                                                                            <div class="col-3 text-center nopadding">
+                                                                                <button id="quitarPedido" type="button"
+                                                                                    class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                                                        class="fa fa-minus "></i></button>
                                                                             </div>
-                                                                            <div class="col-4 text-center">
-                                                                                <h3
-                                                                                    class="border border-grey btn-rounded ">
-                                                                                    1
-                                                                                </h3>
+                                                                            <div class="col-6 text-center nopadding">
+                                                                                <h4 id="pedido"
+                                                                                    class="h4-responsive z-depth-1 rounded-pill mt-2 ">
+                                                                                    100</h4>
                                                                             </div>
-                                                                            <div class="col-4 text-center">
-                                                                                <a type="button"
-                                                                                    class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                                                                        class="fa fa-plus"></i></a>
+                                                                            <div class="col-3 text-center nopadding">
+                                                                                <button id="aumentarPedido"
+                                                                                    type="button"
+                                                                                    class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                                                        class="fa fa-plus"></i></button>
                                                                             </div>
                                                                         </div>
                                                                         <div class="row no-gutters text-center">
@@ -1241,47 +1311,52 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="carousel-item">
-                                                    <div class="col-12 col-md-4">
+                                                <div class="carousel-item no-gutters">
+                                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                                                         <div class="card mb-1">
-                                                            <img class="card-img-top"
-                                                                src="https://mdbootstrap.com/img/Photos/Others/img (38).jpg"
-                                                                alt="Card image cap">
+                                                            <a class="waves-effect waves-light" data-toggle="modal"
+                                                                data-target="#modalDetail">
+                                                                <img class="card-img-top p-3"
+                                                                    src="https://mdbootstrap.com/img/Photos/Others/img (38).jpg"
+                                                                    alt="Card image cap"></a>
                                                             <div class="card-body">
                                                                 <div class="row">
                                                                     <div class="col text-center">
                                                                         <h3 class="h3-responsive"
-                                                                            style="font-family: Gotham-Light;">Cebollas
+                                                                            style="font-family: Gotham-Light;">Chile
                                                                         </h3>
                                                                     </div>
                                                                 </div>
 
-                                                                <div
-                                                                    class="row align-items-center d-flex d-inline-block">
+                                                                <div class="row align-items-center ">
 
-                                                                    <div class="col-6 align-baseline">
-                                                                        <h2 class="letra-gotham-black vino">$0.25</h2>
-                                                                        <h5 class="letra-gotham-light grey-text">antes
-                                                                            $0.30
-                                                                        </h5>
+                                                                    <div class="col-6 col-md-6 col-lg-6 nopadding">
+
+                                                                        <h4 id="precio"
+                                                                            class="h4-responsive letra-gotham-black vino">
+                                                                            $0.25</h4>
+
+                                                                        <h6 id="precioAnterior"
+                                                                            class="letra-gotham-light grey-text">antes
+                                                                            $0.30</h6>
                                                                     </div>
-                                                                    <div class="col-6">
+                                                                    <div class="col-6 col-md-6 col-lg-6 nopadding">
                                                                         <div class="row no-gutters align-items-center">
-                                                                            <div class="col-4 text-center">
-                                                                                <a type="button"
-                                                                                    class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                                                                        class="fa fa-minus"></i></a>
+                                                                            <div class="col-3 text-center nopadding">
+                                                                                <button id="quitarPedido" type="button"
+                                                                                    class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                                                        class="fa fa-minus "></i></button>
                                                                             </div>
-                                                                            <div class="col-4 text-center">
-                                                                                <h3
-                                                                                    class="border border-grey btn-rounded ">
-                                                                                    1
-                                                                                </h3>
+                                                                            <div class="col-6 text-center nopadding">
+                                                                                <h4 id="pedido"
+                                                                                    class="h4-responsive z-depth-1 rounded-pill mt-2 ">
+                                                                                    100</h4>
                                                                             </div>
-                                                                            <div class="col-4 text-center">
-                                                                                <a type="button"
-                                                                                    class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                                                                        class="fa fa-plus"></i></a>
+                                                                            <div class="col-3 text-center nopadding">
+                                                                                <button id="aumentarPedido"
+                                                                                    type="button"
+                                                                                    class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                                                        class="fa fa-plus"></i></button>
                                                                             </div>
                                                                         </div>
                                                                         <div class="row no-gutters text-center">
@@ -1299,47 +1374,52 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="carousel-item">
-                                                    <div class="col-12 col-md-4">
+                                                <div class="carousel-item no-gutters">
+                                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                                                         <div class="card mb-1">
-                                                            <img class="card-img-top"
-                                                                src="https://mdbootstrap.com/img/Photos/Others/img (29).jpg"
-                                                                alt="Card image cap">
+                                                            <a class="waves-effect waves-light" data-toggle="modal"
+                                                                data-target="#modalDetail">
+                                                                <img class="card-img-top p-3"
+                                                                    src="https://mdbootstrap.com/img/Photos/Others/img (29).jpg"
+                                                                    alt="Card image cap"></a>
                                                             <div class="card-body">
                                                                 <div class="row">
                                                                     <div class="col text-center">
                                                                         <h3 class="h3-responsive"
-                                                                            style="font-family: Gotham-Light;">Cebollas
+                                                                            style="font-family: Gotham-Light;">Lechuga
                                                                         </h3>
                                                                     </div>
                                                                 </div>
 
-                                                                <div
-                                                                    class="row align-items-center d-flex d-inline-block">
+                                                                <div class="row align-items-center ">
 
-                                                                    <div class="col-6 align-baseline">
-                                                                        <h2 class="letra-gotham-black vino">$0.25</h2>
-                                                                        <h5 class="letra-gotham-light grey-text">antes
-                                                                            $0.30
-                                                                        </h5>
+                                                                    <div class="col-6 col-md-6 col-lg-6 nopadding">
+
+                                                                        <h4 id="precio"
+                                                                            class="h4-responsive letra-gotham-black vino">
+                                                                            $0.25</h4>
+
+                                                                        <h6 id="precioAnterior"
+                                                                            class="letra-gotham-light grey-text">antes
+                                                                            $0.30</h6>
                                                                     </div>
-                                                                    <div class="col-6">
+                                                                    <div class="col-6 col-md-6 col-lg-6 nopadding">
                                                                         <div class="row no-gutters align-items-center">
-                                                                            <div class="col-4 text-center">
-                                                                                <a type="button"
-                                                                                    class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                                                                        class="fa fa-minus"></i></a>
+                                                                            <div class="col-3 text-center nopadding">
+                                                                                <button id="quitarPedido" type="button"
+                                                                                    class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                                                        class="fa fa-minus "></i></button>
                                                                             </div>
-                                                                            <div class="col-4 text-center">
-                                                                                <h3
-                                                                                    class="border border-grey btn-rounded ">
-                                                                                    1
-                                                                                </h3>
+                                                                            <div class="col-6 text-center nopadding">
+                                                                                <h4 id="pedido"
+                                                                                    class="h4-responsive z-depth-1 rounded-pill mt-2 ">
+                                                                                    100</h4>
                                                                             </div>
-                                                                            <div class="col-4 text-center">
-                                                                                <a type="button"
-                                                                                    class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                                                                        class="fa fa-plus"></i></a>
+                                                                            <div class="col-3 text-center nopadding">
+                                                                                <button id="aumentarPedido"
+                                                                                    type="button"
+                                                                                    class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                                                        class="fa fa-plus"></i></button>
                                                                             </div>
                                                                         </div>
                                                                         <div class="row no-gutters text-center">
@@ -1357,47 +1437,52 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="carousel-item">
-                                                    <div class="col-12 col-md-4">
+                                                <div class="carousel-item no-gutters">
+                                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                                                         <div class="card mb-1">
-                                                            <img class="card-img-top"
-                                                                src="https://mdbootstrap.com/img/Photos/Others/img (30).jpg"
-                                                                alt="Card image cap">
+                                                            <a class="waves-effect waves-light" data-toggle="modal"
+                                                                data-target="#modalDetail">
+                                                                <img class="card-img-top p-3"
+                                                                    src="https://mdbootstrap.com/img/Photos/Others/img (30).jpg"
+                                                                    alt="Card image cap"></a>
                                                             <div class="card-body">
                                                                 <div class="row">
                                                                     <div class="col text-center">
                                                                         <h3 class="h3-responsive"
-                                                                            style="font-family: Gotham-Light;">Cebollas
+                                                                            style="font-family: Gotham-Light;">Papas
                                                                         </h3>
                                                                     </div>
                                                                 </div>
 
-                                                                <div
-                                                                    class="row align-items-center d-flex d-inline-block">
+                                                                <div class="row align-items-center ">
 
-                                                                    <div class="col-6 align-baseline">
-                                                                        <h2 class="letra-gotham-black vino">$0.25</h2>
-                                                                        <h5 class="letra-gotham-light grey-text">antes
-                                                                            $0.30
-                                                                        </h5>
+                                                                    <div class="col-6 col-md-6 col-lg-6 nopadding">
+
+                                                                        <h4 id="precio"
+                                                                            class="h4-responsive letra-gotham-black vino">
+                                                                            $0.25</h4>
+
+                                                                        <h6 id="precioAnterior"
+                                                                            class="letra-gotham-light grey-text">antes
+                                                                            $0.30</h6>
                                                                     </div>
-                                                                    <div class="col-6">
+                                                                    <div class="col-6 col-md-6 col-lg-6 nopadding">
                                                                         <div class="row no-gutters align-items-center">
-                                                                            <div class="col-4 text-center">
-                                                                                <a type="button"
-                                                                                    class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                                                                        class="fa fa-minus"></i></a>
+                                                                            <div class="col-3 text-center nopadding">
+                                                                                <button id="quitarPedido" type="button"
+                                                                                    class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                                                        class="fa fa-minus "></i></button>
                                                                             </div>
-                                                                            <div class="col-4 text-center">
-                                                                                <h3
-                                                                                    class="border border-grey btn-rounded ">
-                                                                                    1
-                                                                                </h3>
+                                                                            <div class="col-6 text-center nopadding">
+                                                                                <h4 id="pedido"
+                                                                                    class="h4-responsive z-depth-1 rounded-pill mt-2 ">
+                                                                                    100</h4>
                                                                             </div>
-                                                                            <div class="col-4 text-center">
-                                                                                <a type="button"
-                                                                                    class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                                                                        class="fa fa-plus"></i></a>
+                                                                            <div class="col-3 text-center nopadding">
+                                                                                <button id="aumentarPedido"
+                                                                                    type="button"
+                                                                                    class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                                                        class="fa fa-plus"></i></button>
                                                                             </div>
                                                                         </div>
                                                                         <div class="row no-gutters text-center">
@@ -1415,47 +1500,52 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="carousel-item">
-                                                    <div class="col-12 col-md-4">
+                                                <div class="carousel-item no-gutters">
+                                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                                                         <div class="card mb-1">
-                                                            <img class="card-img-top"
-                                                                src="https://mdbootstrap.com/img/Photos/Others/img (27).jpg"
-                                                                alt="Card image cap">
+                                                            <a class="waves-effect waves-light" data-toggle="modal"
+                                                                data-target="#modalDetail">
+                                                                <img class="card-img-top p-3"
+                                                                    src="https://mdbootstrap.com/img/Photos/Others/img (27).jpg"
+                                                                    alt="Card image cap"></a>
                                                             <div class="card-body">
                                                                 <div class="row">
                                                                     <div class="col text-center">
                                                                         <h3 class="h3-responsive"
-                                                                            style="font-family: Gotham-Light;">Cebollas
+                                                                            style="font-family: Gotham-Light;">Jalapeño
                                                                         </h3>
                                                                     </div>
                                                                 </div>
 
-                                                                <div
-                                                                    class="row align-items-center d-flex d-inline-block">
+                                                                <div class="row align-items-center ">
 
-                                                                    <div class="col-6 align-baseline">
-                                                                        <h2 class="letra-gotham-black vino">$0.25</h2>
-                                                                        <h5 class="letra-gotham-light grey-text">antes
-                                                                            $0.30
-                                                                        </h5>
+                                                                    <div class="col-6 col-md-6 col-lg-6 nopadding">
+
+                                                                        <h4 id="precio"
+                                                                            class="h4-responsive letra-gotham-black vino">
+                                                                            $0.25</h4>
+
+                                                                        <h6 id="precioAnterior"
+                                                                            class="letra-gotham-light grey-text">antes
+                                                                            $0.30</h6>
                                                                     </div>
-                                                                    <div class="col-6">
+                                                                    <div class="col-6 col-md-6 col-lg-6 nopadding">
                                                                         <div class="row no-gutters align-items-center">
-                                                                            <div class="col-4 text-center">
-                                                                                <a type="button"
-                                                                                    class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                                                                        class="fa fa-minus"></i></a>
+                                                                            <div class="col-3 text-center nopadding">
+                                                                                <button id="quitarPedido" type="button"
+                                                                                    class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                                                        class="fa fa-minus "></i></button>
                                                                             </div>
-                                                                            <div class="col-4 text-center">
-                                                                                <h3
-                                                                                    class="border border-grey btn-rounded ">
-                                                                                    1
-                                                                                </h3>
+                                                                            <div class="col-6 text-center nopadding">
+                                                                                <h4 id="pedido"
+                                                                                    class="h4-responsive z-depth-1 rounded-pill mt-2 ">
+                                                                                    100</h4>
                                                                             </div>
-                                                                            <div class="col-4 text-center">
-                                                                                <a type="button"
-                                                                                    class="btn-rounded btn-sm btn-comm bg-naranja"><i
-                                                                                        class="fa fa-plus"></i></a>
+                                                                            <div class="col-3 text-center nopadding">
+                                                                                <button id="aumentarPedido"
+                                                                                    type="button"
+                                                                                    class="btn-rounded btn-sm btn-comm white-text bg-naranja p-1 border-0"><i
+                                                                                        class="fa fa-plus"></i></button>
                                                                             </div>
                                                                         </div>
                                                                         <div class="row no-gutters text-center">
@@ -1475,15 +1565,19 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </section>
+                                    <!-- Fin Productos Destacados -->
                                 </section>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+             <!-- Fin Modal: modalDetalleProducto -->
+
         </section>
         <!-- Fin Productos Destacados -->
+
         <!-- Baner inferior -->
         <section>
 
@@ -1491,6 +1585,7 @@
 
         </section>
         <!-- Fin Baner inferior -->
+
         <!-- Footer -->
         <footer class="page-footer font-small blue-grey lighten-5">
 
@@ -1510,18 +1605,18 @@
                         <div class="col-md-6 col-lg-7 text-center text-md-right">
 
                             <!-- Whatsapp -->
-                            <a class="fb-ic">
-                                <i class="fab fa-whatsapp white-text mr-4"> </i>
+                            <a class="fb-ic border rounded-circle p-1 mr-4">
+                                <i class="fab fa-whatsapp white-text ml-1"> </i>
                             </a>
 
                             <!-- Facebook -->
-                            <a class="fb-ic">
-                                <i class="fab fa-facebook-f white-text mr-4"> </i>
+                            <a class="fb-ic border rounded-circle p-1 mr-4">
+                                <i class="fab fa-facebook-f white-text ml-1"> </i>
                             </a>
 
                             <!--Instagram-->
-                            <a class="ins-ic">
-                                <i class="fab fa-instagram white-text mr-4"> </i>
+                            <a class="ins-ic border rounded-circle p-1 mr-4">
+                                <i class="fab fa-instagram white-text m-1"> </i>
                             </a>
 
                         </div>
@@ -1534,10 +1629,6 @@
             </div>
         </footer>
         <!-- Footer -->
-
-
-
-
 
         <!-- SCRIPTS -->
         <!-- JQuery -->
