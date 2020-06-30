@@ -98,17 +98,35 @@
   margin-left: 0;
 }
 
-@media (max-width: 767.98px) {
-  .alto-nav-md {
-   height: 150px !important;
+.popover-body {
+  padding: 0 !important;
+  margin: 0 !important;
   }
+
+  
+  .carousel-control-next{
+     
+    right: -8%;
+    height: 50%;
+}
+.carousel-control-prev{
+      left: -8%;
+      height: 50%;
 }
 
-@media (max-width: 991.98px) {
-  .alto-nav-lg{
-    height: 25px !important;
-  }
+.modal-border-rounded{
+  border-radius: 4rem !important;
 }
+
+.modal-border-rounded-cart{
+  border-radius: 2rem !important;
+}
+
+#prev{
+  transform: rotate(-180deg);
+}
+
+
 
 
 
